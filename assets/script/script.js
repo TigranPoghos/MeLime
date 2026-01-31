@@ -34,6 +34,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+    // переключение языков
+    const langButtons = document.querySelectorAll('.header__lang-item');
+
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            langButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        });
+    });
+
+
+
+
+
+    //шапка-услуги
+    const menuServiceButton = document.querySelector('.header__menuJS')
+    const menuServiceBlock = document.querySelector('.header__serviceJS')
+
+    menuServiceButton.addEventListener('click', () => {
+        menuServiceBlock.classList.toggle('active')
+    })
+
+    document.addEventListener('click', (e) => {
+        const click = e.composedPath().includes(menuServiceBlock)
+
+        if ( !click ) {
+            menuServiceBlock.classList.remove('active')
+        }
+    })
+
+    
+
+
 
 
 
