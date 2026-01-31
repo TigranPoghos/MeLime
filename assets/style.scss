@@ -894,6 +894,7 @@ body {
 .talk {
     background: linear-gradient(-90deg, #FEE348 0%, #FFF097 100%);
     position: relative;
+    border-radius: 30px 30px 0 0;
 
     &__row {
         padding: 85px 0;

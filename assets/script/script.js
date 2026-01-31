@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     $('input[type="tel"]')
-    .mask('+7 (999) 999 99 99', { autoclear: false })
+    .mask('+358 (999) 999 99 99', { autoclear: false })
     .on('click', function(e) {
         const value = $(this).val();
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (clean.length <= 3) {
         e.preventDefault();
-        $(this).setCursorPosition(4);
+        $(this).setCursorPosition(6);
         }
     });
 
