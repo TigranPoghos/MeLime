@@ -49,20 +49,65 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     //шапка-услуги
-    const menuServiceButton = document.querySelector('.header__menuJS')
-    const menuServiceBlock = document.querySelector('.header__serviceJS')
+    const serviceBlocks = document.querySelectorAll('.header__serviceJS');
 
-    menuServiceButton.addEventListener('click', () => {
-        menuServiceBlock.classList.toggle('active')
-    })
+    serviceBlocks.forEach(block => {
+        const button = block.querySelector('.header__menuJS');
+
+        button.addEventListener('click', (e) => {
+            e.stopPropagation();
+            block.classList.toggle('active');
+        });
+    });
 
     document.addEventListener('click', (e) => {
-        const click = e.composedPath().includes(menuServiceBlock)
+        serviceBlocks.forEach(block => {
+            if (!e.composedPath().includes(block)) {
+                block.classList.remove('active');
+            }
+        });
+    });
 
-        if ( !click ) {
-            menuServiceBlock.classList.remove('active')
+
+
+    //бургер 
+    const burger = document.querySelector('.burger')
+    const burgerButton = document.querySelector('.header__burger')
+    const burgerClose = document.querySelector('.burger__close')
+    const body = document.querySelector('body')
+    const opacite = document.querySelector('.opacite')
+
+    function openBurger() {
+        burger.classList.add('active');
+        opacite.classList.add('active');
+        body.classList.add('hidden');
+    }
+
+    function closeBurger() {
+        burger.classList.remove('active');
+        opacite.classList.remove('active');
+        body.classList.remove('hidden');
+    }
+
+    burgerButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openBurger();
+    });
+
+    burgerClose.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeBurger();
+    });
+
+    document.addEventListener('click', (e) => {
+        const clickInsideBurger = e.composedPath().includes(burger);
+        const clickOnButton = e.composedPath().includes(burgerButton);
+
+        if (!clickInsideBurger && !clickOnButton) {
+            closeBurger();
         }
-    })
+    });
+
 
     
 

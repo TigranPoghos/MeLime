@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <div class="header__row row">
-            <a href="#" class="header__logo">
+            <a href="index.html" class="header__logo">
                 <img src="assets/image/logo-main.png" alt="logo">
                 <img src="assets/image/logo-text.png" alt="logo">
             </a>
@@ -26,11 +26,10 @@
                             </div>
                         </button>
                         <div class="header__service">
-                            <a href="#" class="header__service-item text hover__text">Разработка сайтов</a>
-                            <a href="#" class="header__service-item text hover__text">Техническая поддержка</a>
-                            <a href="#" class="header__service-item text hover__text">Разработка сайтов</a>
-                            <a href="#" class="header__service-item text hover__text">Техническая поддержка</a>
-                            <a href="#" class="header__service-item text hover__text">Разработка сайтов</a>
+                            <a href="#" class="header__service-item text hover__text">Sosiaalinen media</a>
+                            <a href="#" class="header__service-item text hover__text">Nettisivut</a>
+                            <a href="#" class="header__service-item text hover__text">Visuaalinen tuotanto</a>
+                            <a href="#" class="header__service-item text hover__text">Brändituotteet</a>
                         </div>
                     </li>
                     <li><a href="#" class="header__menu-item text hover__text">Referenssit</a></li>
@@ -78,9 +77,88 @@
                     </a>
                 </div>
             </div>
+            <button class="header__burger">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 32H32M2 2H32M2 17H32" stroke="white" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="burger">
+                <button class="burger__close">
+                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.9309 42.215L42.2151 13.9307" stroke="#FEE348" />
+                        <path d="M41.9308 42.922L13.6465 14.6377" stroke="#FEE348" />
+                    </svg>
+                </button>
+                <nav>
+                    <ul class="header__menu mob">
+                        <li class="header__serviceJS">
+                            <button class="header__menu-item header__menuJS text">
+                                <span>Palvelut</span>
+                                <div class="header__menu-more">
+                                    <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 0.5L18 13.7549L7 26.5" stroke="#FEE348" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="header__service">
+                                <a href="#" class="header__service-item text hover__text">Sosiaalinen media</a>
+                                <a href="#" class="header__service-item text hover__text">Nettisivut</a>
+                                <a href="#" class="header__service-item text hover__text">Visuaalinen tuotanto</a>
+                                <a href="#" class="header__service-item text hover__text">Brändituotteet</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="header__menu-item text hover__text">Referenssit</a></li>
+                        <li><a href="#" class="header__menu-item text hover__text">Ajankohtaista</a></li>
+                        <li><a href="#" class="header__menu-item text hover__text">Meistä</a></li>
+                        <li><a href="#" class="header__menu-item text hover__text">Yhteystiedot</a></li> 
+                    </ul>
+                </nav>
+                <div class="burger__buttons">
+                    <div class="burger__buttons-left">
+                        <div class="header__button-social">
+                            <a href="#">
+                                <svg class="hover__svg" width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="hover__svg-path" d="M19.0433 0H18.9567C8.48722 0 0 8.48972 0 18.9623V19.0489C0 29.5215 8.48722 38.0112 18.9567 38.0112H19.0433C29.5128 38.0112 38 29.5215 38 19.0489V18.9623C38 8.48972 29.5128 0 19.0433 0Z" fill="#fff" />
+                                    <path d="M22.7025 24.5649C17.8391 24.5649 13.8824 20.6057 13.8811 15.741C13.8824 14.5078 14.8863 13.505 16.1164 13.505C16.2429 13.505 16.368 13.5157 16.4878 13.537C16.7514 13.5809 17.0017 13.6702 17.2321 13.8047C17.2653 13.8246 17.288 13.8566 17.2933 13.8939L17.8072 17.1339C17.8138 17.1712 17.8019 17.2099 17.7766 17.2378C17.493 17.5521 17.1309 17.7785 16.7275 17.8917L16.5331 17.9463L16.6063 18.1341C17.2693 19.8227 18.6193 21.1717 20.3087 21.8376L20.4965 21.9121L20.551 21.7177C20.6642 21.3142 20.8905 20.952 21.2047 20.6683C21.2274 20.647 21.258 20.6364 21.2886 20.6364C21.2953 20.6364 21.3019 20.6364 21.3099 20.6377L24.549 21.1517C24.5876 21.1584 24.6196 21.1797 24.6395 21.213C24.7727 21.4434 24.8619 21.6951 24.9071 21.9588C24.9284 22.076 24.9378 22.1998 24.9378 22.329C24.9378 23.5608 23.9353 24.5636 22.7025 24.5649Z" fill="#0B0A0D" />
+                                    <path d="M31.3268 17.9383C31.0646 14.9739 29.7066 12.2239 27.5033 10.1957C25.2866 8.15546 22.411 7.03149 19.4035 7.03149C12.8028 7.03149 7.43224 12.4036 7.43224 19.0063C7.43224 21.2223 8.0433 23.381 9.20022 25.2614L6.62012 30.9744L14.881 30.0942C16.3175 30.6828 17.8379 30.9811 19.4022 30.9811C19.8135 30.9811 20.2356 30.9598 20.6589 30.9158C21.0317 30.8759 21.4085 30.8173 21.7786 30.7427C27.3063 29.6254 31.3415 24.718 31.3734 19.0702V19.0063C31.3734 18.6467 31.3575 18.2872 31.3255 17.9396L31.3268 17.9383ZM15.1992 27.5865L10.6287 28.0739L11.9934 25.0496L11.7204 24.6834C11.7005 24.6568 11.6805 24.6301 11.6579 24.5995C10.473 22.9628 9.84725 21.0292 9.84725 19.0076C9.84725 13.7367 14.1341 9.44856 19.4035 9.44856C24.34 9.44856 28.5244 13.3012 28.9278 18.2192C28.9491 18.4829 28.9611 18.7479 28.9611 19.009C28.9611 19.0835 28.9597 19.1568 28.9584 19.2353C28.8572 23.6447 25.7779 27.3894 21.4697 28.343C21.1409 28.4162 20.8041 28.4721 20.4686 28.5081C20.1198 28.548 19.7616 28.568 19.4062 28.568C18.1401 28.568 16.9099 28.323 15.7477 27.8382C15.6185 27.7863 15.4921 27.7304 15.3736 27.6731L15.2005 27.5892L15.1992 27.5865Z" fill="#0B0A0D" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="hover__svg" width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="hover__svg-path" d="M19.0433 0H18.9567C8.48721 0 0 8.48972 0 18.9623V19.0489C0 29.5215 8.48721 38.0112 18.9567 38.0112H19.0433C29.5128 38.0112 38 29.5215 38 19.0489V18.9623C38 8.48972 29.5128 0 19.0433 0Z" fill="#fff" />
+                                    <path d="M7.19712 18.3577C7.25037 18.3311 7.30365 18.3058 7.35557 18.2818C8.25821 17.8637 9.17283 17.4721 10.0861 17.0806C10.1354 17.0806 10.2179 17.0233 10.2645 17.0047C10.3351 16.9741 10.4056 16.9448 10.4762 16.9141C10.612 16.8555 10.7478 16.7983 10.8822 16.7397C11.1538 16.6238 11.4241 16.508 11.6957 16.3921L13.3212 15.6956C14.4049 15.2322 15.49 14.7674 16.5737 14.304C17.6574 13.8405 18.7424 13.3758 19.8261 12.9123C20.9098 12.4489 21.9948 11.9841 23.0785 11.5207C24.1622 11.0573 25.2473 10.5925 26.3309 10.129C26.5719 10.0252 26.8329 9.87069 27.0911 9.82541C27.3081 9.78679 27.5198 9.71222 27.7381 9.67093C28.1522 9.59236 28.6088 9.5604 29.0056 9.7322C29.1427 9.79212 29.2692 9.87602 29.3743 9.98123C29.8776 10.4793 29.807 11.297 29.7005 11.9974C28.959 16.8795 28.2174 21.7629 27.4745 26.645C27.3734 27.3149 27.2349 28.05 26.7064 28.4734C26.259 28.8317 25.6227 28.8716 25.0702 28.7198C24.5177 28.5667 24.0304 28.2457 23.5525 27.9301C21.5701 26.617 19.5865 25.304 17.6041 23.9909C17.1328 23.6793 16.6083 23.2718 16.6136 22.7058C16.6163 22.3649 16.8199 22.0612 17.0276 21.7909C18.7504 19.543 21.236 17.9982 23.0852 15.8541C23.3461 15.5518 23.5511 15.0058 23.193 14.8313C22.98 14.7275 22.735 14.8686 22.5406 15.0031C20.0963 16.7011 17.6534 18.4003 15.2091 20.0983C14.4116 20.6523 13.5755 21.2222 12.6143 21.3581C11.7543 21.4806 10.8889 21.2409 10.0568 20.9959C9.35922 20.7908 8.66291 20.5804 7.96929 20.3633C7.60051 20.2488 7.21975 20.1249 6.93485 19.8652C6.64995 19.6055 6.48621 19.1687 6.65796 18.8225C6.76579 18.6054 6.97481 18.4683 7.19448 18.3564L7.19712 18.3577Z" fill="#0B0A0D" />
+                                </svg>
+                            </a>
+                        </div>
+                        <a class="burger__tel" href="tel:+79672356587">+7 967 235-65-87</a>
+                    </div>
+                    <div class="burger__buttons-right">
+                        <div class="header__lang">
+                            <a href="#" class="header__lang-item active">
+                                <span class="text hover__text">En</span>
+                                <span class="header__lang-line">
+                                    <svg width="5" height="2" viewBox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.58057 1L-7.88569e-05 1" stroke="#FEE348" stroke-width="2" />
+                                    </svg>
+                                </span>
+                            </a>
+
+                            <a href="#" class="header__lang-item">
+                                <span class="text hover__text">Fi</span>
+                                <span class="header__lang-line">
+                                    <svg width="5" height="2" viewBox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.58057 1L-7.88569e-05 1" stroke="#FEE348" stroke-width="2" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main class="main">
+        <div class="opacite"></div>
         <section class="first">
             <div class="first__gradient">
                 <img src="assets/image/first-gradient.png" alt="gradient">
@@ -99,9 +177,66 @@
                             <span class="text">nettisivut/ somesisältö/ graafiset työt</span>
                         </p>
                     </h3>
+                    <div class="first__client mob">
+                        <p class="text">Asiakkaidemme arvostelut</p>
+                        <div class="first__client-stars">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3_1317)">
+                                    <path d="M12.6262 7.5L10.5 1.5L8.37375 7.5H1.75L7.1575 10.8075L5.10125 16.5L10.5 12.9825L15.9075 16.5L13.8512 10.8075L19.25 7.5H12.6262Z" fill="#FFC183" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3_1317">
+                                    <rect width="21" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3_1317)">
+                                    <path d="M12.6262 7.5L10.5 1.5L8.37375 7.5H1.75L7.1575 10.8075L5.10125 16.5L10.5 12.9825L15.9075 16.5L13.8512 10.8075L19.25 7.5H12.6262Z" fill="#FFC183" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3_1317">
+                                    <rect width="21" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3_1317)">
+                                    <path d="M12.6262 7.5L10.5 1.5L8.37375 7.5H1.75L7.1575 10.8075L5.10125 16.5L10.5 12.9825L15.9075 16.5L13.8512 10.8075L19.25 7.5H12.6262Z" fill="#FFC183" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3_1317">
+                                    <rect width="21" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3_1317)">
+                                    <path d="M12.6262 7.5L10.5 1.5L8.37375 7.5H1.75L7.1575 10.8075L5.10125 16.5L10.5 12.9825L15.9075 16.5L13.8512 10.8075L19.25 7.5H12.6262Z" fill="#FFC183" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3_1317">
+                                    <rect width="21" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3_1317)">
+                                    <path d="M12.6262 7.5L10.5 1.5L8.37375 7.5H1.75L7.1575 10.8075L5.10125 16.5L10.5 12.9825L15.9075 16.5L13.8512 10.8075L19.25 7.5H12.6262Z" fill="#FFC183" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3_1317">
+                                    <rect width="21" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <p class="content">20 arvostelua</p>
+                        <a class="first__client-button" href="#"><span class="text">Lue lisää</span></a>
+                    </div>
                     <button class="first__button hover__button"><span class="text">Ota yhteyttä</span></button>
                 </div>
-                <div class="first__client">
+                <div class="first__client decs">
                     <p class="text">Asiakkaidemme arvostelut</p>
                     <div class="first__client-stars">
                         <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -170,7 +305,7 @@
                             </svg>
                             <h3 class="text">Meidän referenssit</h3>
                         </div>
-                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="decs" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20.1625 21.0673C15.2189 25.0821 8.58775 24.5597 5.96339 21.9291C3.33904 19.2986 3.69454 11.7927 8.24577 7.59701C12.797 3.4013 19.1542 3.01542 22.4449 6.73513C25.7356 10.4548 24.7137 16.8715 20.1625 21.0673Z" fill="#FEE348" />
                             <ellipse cx="2.47017" cy="3.07883" rx="2.47017" ry="3.07883" transform="matrix(0.662596 0.748977 -0.73524 0.677806 22.4177 3.02051)" fill="#FEE348" />
                             <path d="M8.42938 22.976C7.17919 24.1285 5.15054 23.8358 4.52898 23.2128C3.99079 22.6733 3.90574 20.4283 5.15594 19.2758C6.40613 18.1233 8.1524 18.0173 9.05634 19.0391C9.96028 20.0608 9.67958 21.8235 8.42938 22.976Z" fill="#FEE348" />
@@ -184,7 +319,7 @@
                         </a>
                     </div>
                     <div class="project__grid">
-                        <a href="#" class="project__grid-item">
+                        <a href="#" class="project__grid-item decs">
                             <div class="project__overlay">
                                 <div class="project__overlay-chip">
                                     <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
@@ -221,7 +356,7 @@
                                 <span class="content project__grid-content">Avaimet käteen - sisällöstä ulkoasuun</span>
                             </p>
                         </a>
-                        <a href="#" class="project__grid-item">
+                        <a href="#" class="project__grid-item decs">
                             <div class="project__overlay">
                                 <div class="project__overlay-chip">
                                     <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
@@ -258,7 +393,7 @@
                                 <span class="content project__grid-content">Ideointi, kuvaukset, editointi, tekstien kirjoittaminen ja postaaminen ja paljon muuta</span>
                             </p>
                         </a>
-                        <a href="#" class="project__grid-item">
+                        <a href="#" class="project__grid-item decs">
                             <div class="project__overlay">
                                 <div class="project__overlay-chip">
                                     <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
@@ -273,7 +408,7 @@
                             </div>
                             <img src="assets/image/project-6.jpg" alt="project">
                         </a>
-                        <a href="#" class="project__grid-item">
+                        <a href="#" class="project__grid-item decs">
                             <div class="project__overlay">
                                 <div class="project__overlay-chip">
                                     <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
@@ -287,6 +422,28 @@
                                 </div>
                             </div>
                             <img src="assets/image/project-5.jpg" alt="project">
+                        </a>
+                        <a href="#" class="project__grid-item project__grid-item-big mob">
+                            <div class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
+                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-2.jpg" alt="project">
+                            </div>
+                            <p class="project__grid-text">
+                                <span class="text project__grid-title">Sometilien ylläpito</span>
+                                <span class="content project__grid-content">Ideointi, kuvaukset, editointi, tekstien kirjoittaminen ja postaaminen ja paljon muuta</span>
+                            </p>
                         </a>
                     </div>
                 </div>
@@ -361,8 +518,13 @@
                         <a href="#" class="service__item">
                             <div class="service__title-block">
                                 <h3 class="service__title">Somepaketti</h3>
-                                <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="decs" width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.720337 27.0001L25.7561 1.00098M1.20178 1H25.2747V26.9991" stroke="#0B0A0D" stroke-width="2" />
+                                </svg>
+                                <svg class="mob" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="40" height="40" rx="20" fill="#191919" />
+                                    <path d="M13.4825 12H32V31.9994" stroke="#FEE348" stroke-width="2" />
+                                    <path d="M12 32.7396L31.2582 12.7402" stroke="#FEE348" stroke-width="2" />
                                 </svg>
                             </div>
                             <div class="service__text">
@@ -405,8 +567,13 @@
                         <a href="#" class="service__item">
                             <div class="service__title-block">
                                 <h3 class="service__title">Nettisivupaketti</h3>
-                                <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="decs" width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.720337 27.0001L25.7561 1.00098M1.20178 1H25.2747V26.9991" stroke="#0B0A0D" stroke-width="2" />
+                                </svg>
+                                <svg class="mob" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="40" height="40" rx="20" fill="#191919" />
+                                    <path d="M13.4825 12H32V31.9994" stroke="#FEE348" stroke-width="2" />
+                                    <path d="M12 32.7396L31.2582 12.7402" stroke="#FEE348" stroke-width="2" />
                                 </svg>
                             </div>
                             <div class="service__text">
@@ -423,8 +590,13 @@
                         <a href="#" class="service__item">
                             <div class="service__title-block">
                                 <h3 class="service__title">Visuaalinen paketti</h3>
-                                <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="decs" width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.720337 27.0001L25.7561 1.00098M1.20178 1H25.2747V26.9991" stroke="#0B0A0D" stroke-width="2" />
+                                </svg>
+                                <svg class="mob" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="40" height="40" rx="20" fill="#191919" />
+                                    <path d="M13.4825 12H32V31.9994" stroke="#FEE348" stroke-width="2" />
+                                    <path d="M12 32.7396L31.2582 12.7402" stroke="#FEE348" stroke-width="2" />
                                 </svg>
                             </div>
                             <div class="service__text">
@@ -440,8 +612,13 @@
                         <a href="#" class="service__item">
                             <div class="service__title-block">
                                 <h3 class="service__title">Brändituotepaketti</h3>
-                                <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="decs" width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.720337 27.0001L25.7561 1.00098M1.20178 1H25.2747V26.9991" stroke="#0B0A0D" stroke-width="2" />
+                                </svg>
+                                <svg class="mob" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="40" height="40" rx="20" fill="#191919" />
+                                    <path d="M13.4825 12H32V31.9994" stroke="#FEE348" stroke-width="2" />
+                                    <path d="M12 32.7396L31.2582 12.7402" stroke="#FEE348" stroke-width="2" />
                                 </svg>
                             </div>
                             <div class="service__text">
@@ -464,6 +641,107 @@
                         </div>
                         <a href="#" class="project__button">
                             <span class="text">Все услуги</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.43164 0.5H14.8245V14.9643" stroke="black" />
+                                <path d="M0.360107 15.5L14.2887 1.03571" stroke="black" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article">
+            <div class="container">
+                <div class="article__row row">
+                    <h2 class="title">Ajankohtaista</h2>
+                    <div class="article__wrapper">
+                        <a href="#" class="article__big">
+                            <div class="article__big-img">
+                                <img src="assets/image/article-item.jpg" alt="article">
+                            </div>
+                            <div class="article__big-content">
+                                <div class="article__big-content-left">
+                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
+                                    <p class="content article__big-content-data">09. 04.2025</p>
+                                    <p class="content">преимущества и недостатки</p>
+                                </div>
+                                <div class="article__big-content-right">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
+                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
+                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="article__small">
+                            <a href="#" class="article__big-content article__small-item">
+                                <div class="article__big-content-left">
+                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
+                                    <p class="content article__big-content-data">09. 04.2025</p>
+                                    <p class="content">преимущества и недостатки</p>
+                                </div>
+                                <div class="article__big-content-right ">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
+                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
+                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
+                                    </svg>
+                                </div>
+                            </a>
+                            <a href="#" class="article__big-content article__small-item">
+                                <div class="article__big-content-left">
+                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
+                                    <p class="content article__big-content-data">09. 04.2025</p>
+                                    <p class="content">преимущества и недостатки</p>
+                                </div>
+                                <div class="article__big-content-right">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
+                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
+                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
+                                    </svg>
+                                </div>
+                            </a>
+                            <a href="#" class="article__big-content article__small-item">
+                                <div class="article__big-content-left">
+                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
+                                    <p class="content article__big-content-data">09. 04.2025</p>
+                                    <p class="content">преимущества и недостатки</p>
+                                </div>
+                                <div class="article__big-content-right">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
+                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
+                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
+                                    </svg>
+                                </div>
+                            </a>
+                            <a href="#" class="article__big-content article__small-item">
+                                <div class="article__big-content-left">
+                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
+                                    <p class="content article__big-content-data">09. 04.2025</p>
+                                    <p class="content">преимущества и недостатки</p>
+                                </div>
+                                <div class="article__big-content-right">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
+                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
+                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__top">
+                        <div class="project__title">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.1562 0C10.1562 0 10.9375 0.463867 12.5 1.3916C12.5 1.3916 11.5479 2.92969 9.64355 6.00586C9.64355 6.00586 11.3607 5.95703 14.7949 5.85938C14.7949 5.85938 14.7949 6.72201 14.7949 8.44727C14.7949 8.44727 13.0941 8.41471 9.69238 8.34961C9.69238 8.34961 10.612 9.847 12.4512 12.8418C12.4512 12.8418 11.6699 13.2975 10.1074 14.209C10.1074 14.209 9.22038 12.6872 7.44629 9.64355C7.44629 9.64355 6.56738 11.1654 4.80957 14.209C4.80957 14.209 4.00391 13.737 2.39258 12.793C2.39258 12.793 3.34473 11.3118 5.24902 8.34961C5.24902 8.34961 3.49935 8.38216 0 8.44727C0 8.44727 0 7.58464 0 5.85938C0 5.85938 1.74967 5.9082 5.24902 6.00586C5.24902 6.00586 4.31315 4.46777 2.44141 1.3916C2.44141 1.3916 3.26335 0.927734 4.90723 0C4.90723 0 5.78613 1.4974 7.54395 4.49219C7.54395 4.49219 8.41471 2.99479 10.1562 0Z" fill="#FEE348" />
+                            </svg>
+                            <h3 class="text">Больше статей</h3>
+                        </div>
+                        <a href="#" class="project__button">
+                            <span class="text">Все статьи</span>
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.43164 0.5H14.8245V14.9643" stroke="black" />
                                 <path d="M0.360107 15.5L14.2887 1.03571" stroke="black" />
@@ -599,7 +877,56 @@
         </section>
     </main>
     <footer class="footer">
-
+        <div class="container">
+            <div class="footer__row row">
+                <div class="footer__top">
+                    <a href="index.html" class="footer__logo">
+                        <img src="assets/image/footer__logo.png" alt="logo">
+                        <img src="assets/image/footer__logo-text.png" alt="logo">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="footer__menu">
+                            <li><a href="#" class="text hover__text">Ajankohtaista</a></li>
+                            <li><a href="#" class="text hover__text">Lisenssit</a></li>
+                            <li><a href="#" class="text hover__text">Yhteystiedot</a></li>
+                            <li><a href="#" class="text hover__text">Meistä</a></li>
+                        </ul>
+                        <ul class="footer__menu footer__menu-second">
+                            <li><a href="#" class="text">Referenssit</a></li>
+                            <li class="footer__menu-service">
+                                <a href="#" class="text">Palvelut</a>
+                                <ul class="footer__menu-mini">
+                                    <li><a href="#" class="content hover__text">Sosiaalinen media</a></li>
+                                    <li><a href="#" class="content hover__text">Nettisivut</a></li>
+                                    <li><a href="#" class="content hover__text">Visuaalinen tuotanto</a></li>
+                                    <li><a href="#" class="content hover__text">Brändituotteet</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__social">
+                        <div class="header__button-social">
+                            <a href="#">
+                                <svg class="hover__svg" width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="hover__svg-path" d="M19.0433 0H18.9567C8.48722 0 0 8.48972 0 18.9623V19.0489C0 29.5215 8.48722 38.0112 18.9567 38.0112H19.0433C29.5128 38.0112 38 29.5215 38 19.0489V18.9623C38 8.48972 29.5128 0 19.0433 0Z" fill="#fff" />
+                                    <path d="M22.7025 24.5649C17.8391 24.5649 13.8824 20.6057 13.8811 15.741C13.8824 14.5078 14.8863 13.505 16.1164 13.505C16.2429 13.505 16.368 13.5157 16.4878 13.537C16.7514 13.5809 17.0017 13.6702 17.2321 13.8047C17.2653 13.8246 17.288 13.8566 17.2933 13.8939L17.8072 17.1339C17.8138 17.1712 17.8019 17.2099 17.7766 17.2378C17.493 17.5521 17.1309 17.7785 16.7275 17.8917L16.5331 17.9463L16.6063 18.1341C17.2693 19.8227 18.6193 21.1717 20.3087 21.8376L20.4965 21.9121L20.551 21.7177C20.6642 21.3142 20.8905 20.952 21.2047 20.6683C21.2274 20.647 21.258 20.6364 21.2886 20.6364C21.2953 20.6364 21.3019 20.6364 21.3099 20.6377L24.549 21.1517C24.5876 21.1584 24.6196 21.1797 24.6395 21.213C24.7727 21.4434 24.8619 21.6951 24.9071 21.9588C24.9284 22.076 24.9378 22.1998 24.9378 22.329C24.9378 23.5608 23.9353 24.5636 22.7025 24.5649Z" fill="#0B0A0D" />
+                                    <path d="M31.3268 17.9383C31.0646 14.9739 29.7066 12.2239 27.5033 10.1957C25.2866 8.15546 22.411 7.03149 19.4035 7.03149C12.8028 7.03149 7.43224 12.4036 7.43224 19.0063C7.43224 21.2223 8.0433 23.381 9.20022 25.2614L6.62012 30.9744L14.881 30.0942C16.3175 30.6828 17.8379 30.9811 19.4022 30.9811C19.8135 30.9811 20.2356 30.9598 20.6589 30.9158C21.0317 30.8759 21.4085 30.8173 21.7786 30.7427C27.3063 29.6254 31.3415 24.718 31.3734 19.0702V19.0063C31.3734 18.6467 31.3575 18.2872 31.3255 17.9396L31.3268 17.9383ZM15.1992 27.5865L10.6287 28.0739L11.9934 25.0496L11.7204 24.6834C11.7005 24.6568 11.6805 24.6301 11.6579 24.5995C10.473 22.9628 9.84725 21.0292 9.84725 19.0076C9.84725 13.7367 14.1341 9.44856 19.4035 9.44856C24.34 9.44856 28.5244 13.3012 28.9278 18.2192C28.9491 18.4829 28.9611 18.7479 28.9611 19.009C28.9611 19.0835 28.9597 19.1568 28.9584 19.2353C28.8572 23.6447 25.7779 27.3894 21.4697 28.343C21.1409 28.4162 20.8041 28.4721 20.4686 28.5081C20.1198 28.548 19.7616 28.568 19.4062 28.568C18.1401 28.568 16.9099 28.323 15.7477 27.8382C15.6185 27.7863 15.4921 27.7304 15.3736 27.6731L15.2005 27.5892L15.1992 27.5865Z" fill="#0B0A0D" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="hover__svg" width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="hover__svg-path" d="M19.0433 0H18.9567C8.48721 0 0 8.48972 0 18.9623V19.0489C0 29.5215 8.48721 38.0112 18.9567 38.0112H19.0433C29.5128 38.0112 38 29.5215 38 19.0489V18.9623C38 8.48972 29.5128 0 19.0433 0Z" fill="#fff" />
+                                    <path d="M7.19712 18.3577C7.25037 18.3311 7.30365 18.3058 7.35557 18.2818C8.25821 17.8637 9.17283 17.4721 10.0861 17.0806C10.1354 17.0806 10.2179 17.0233 10.2645 17.0047C10.3351 16.9741 10.4056 16.9448 10.4762 16.9141C10.612 16.8555 10.7478 16.7983 10.8822 16.7397C11.1538 16.6238 11.4241 16.508 11.6957 16.3921L13.3212 15.6956C14.4049 15.2322 15.49 14.7674 16.5737 14.304C17.6574 13.8405 18.7424 13.3758 19.8261 12.9123C20.9098 12.4489 21.9948 11.9841 23.0785 11.5207C24.1622 11.0573 25.2473 10.5925 26.3309 10.129C26.5719 10.0252 26.8329 9.87069 27.0911 9.82541C27.3081 9.78679 27.5198 9.71222 27.7381 9.67093C28.1522 9.59236 28.6088 9.5604 29.0056 9.7322C29.1427 9.79212 29.2692 9.87602 29.3743 9.98123C29.8776 10.4793 29.807 11.297 29.7005 11.9974C28.959 16.8795 28.2174 21.7629 27.4745 26.645C27.3734 27.3149 27.2349 28.05 26.7064 28.4734C26.259 28.8317 25.6227 28.8716 25.0702 28.7198C24.5177 28.5667 24.0304 28.2457 23.5525 27.9301C21.5701 26.617 19.5865 25.304 17.6041 23.9909C17.1328 23.6793 16.6083 23.2718 16.6136 22.7058C16.6163 22.3649 16.8199 22.0612 17.0276 21.7909C18.7504 19.543 21.236 17.9982 23.0852 15.8541C23.3461 15.5518 23.5511 15.0058 23.193 14.8313C22.98 14.7275 22.735 14.8686 22.5406 15.0031C20.0963 16.7011 17.6534 18.4003 15.2091 20.0983C14.4116 20.6523 13.5755 21.2222 12.6143 21.3581C11.7543 21.4806 10.8889 21.2409 10.0568 20.9959C9.35922 20.7908 8.66291 20.5804 7.96929 20.3633C7.60051 20.2488 7.21975 20.1249 6.93485 19.8652C6.64995 19.6055 6.48621 19.1687 6.65796 18.8225C6.76579 18.6054 6.97481 18.4683 7.19448 18.3564L7.19712 18.3577Z" fill="#0B0A0D" />
+                                </svg>
+                            </a>
+                        </div>
+                        <a class="content hover__text" href="mailto:pr@aws.su">pr@aws.su</a>
+                        <a class="content hover__text" href="tel:+79672356587">+7 967 235-65-87</a>
+                    </div>
+                </div>
+                <a href="#" class="footer__bottom">© Веб-студия Artworkshop 2015–2021 | Политика конфиденциальности</a>
+            </div>
+        </div>
     </footer>
 
 
