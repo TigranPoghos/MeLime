@@ -1802,7 +1802,7 @@ body.hidden {
   }
   .footer__row {
     align-items: center;
-    padding: 25px 0 100px 0;
+    padding: 25px 0 50px 0;
   }
   .footer__nav {
     gap: 10px;
