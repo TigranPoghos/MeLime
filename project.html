@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeLime</title>
+    <link rel="stylesheet" href="assets/dist/style.css">
+    <link rel="stylesheet" href="assets/dist/font.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__row row">
+            <a href="index.html" class="header__logo">
+                <img src="assets/image/logo-main.png" alt="logo">
+                <img src="assets/image/logo-text.png" alt="logo">
+            </a>
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__serviceJS">
+                        <button class="header__menu-item header__menuJS text">
+                            <span>Palvelut</span>
+                            <div class="header__menu-more">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.0834 5.25L7.00008 9.33333L2.91675 5.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="header__service">
+                            <a href="#" class="header__service-item text hover__text">Sosiaalinen media</a>
+                            <a href="#" class="header__service-item text hover__text">Nettisivut</a>
+                            <a href="#" class="header__service-item text hover__text">Visuaalinen tuotanto</a>
+                            <a href="#" class="header__service-item text hover__text">Brändituotteet</a>
+                        </div>
+                    </li>
+                    <li><a href="#" class="header__menu-item text hover__text">Referenssit</a></li>
+                    <li><a href="#" class="header__menu-item text hover__text">Ajankohtaista</a></li>
+                    <li><a href="#" class="header__menu-item text hover__text">Meistä</a></li>
+                    <li><a href="#" class="header__menu-item text hover__text">Yhteystiedot</a></li> 
+                </ul>
+            </nav>
+            <div class="header__button">
+                <div class="header__button-social">
+                    <a href="#">
+                        <svg class="hover__svg" width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="hover__svg-path" d="M19.0433 0H18.9567C8.48722 0 0 8.48972 0 18.9623V19.0489C0 29.5215 8.48722 38.0112 18.9567 38.0112H19.0433C29.5128 38.0112 38 29.5215 38 19.0489V18.9623C38 8.48972 29.5128 0 19.0433 0Z" fill="#fff" />
+                            <path d="M22.7025 24.5649C17.8391 24.5649 13.8824 20.6057 13.8811 15.741C13.8824 14.5078 14.8863 13.505 16.1164 13.505C16.2429 13.505 16.368 13.5157 16.4878 13.537C16.7514 13.5809 17.0017 13.6702 17.2321 13.8047C17.2653 13.8246 17.288 13.8566 17.2933 13.8939L17.8072 17.1339C17.8138 17.1712 17.8019 17.2099 17.7766 17.2378C17.493 17.5521 17.1309 17.7785 16.7275 17.8917L16.5331 17.9463L16.6063 18.1341C17.2693 19.8227 18.6193 21.1717 20.3087 21.8376L20.4965 21.9121L20.551 21.7177C20.6642 21.3142 20.8905 20.952 21.2047 20.6683C21.2274 20.647 21.258 20.6364 21.2886 20.6364C21.2953 20.6364 21.3019 20.6364 21.3099 20.6377L24.549 21.1517C24.5876 21.1584 24.6196 21.1797 24.6395 21.213C24.7727 21.4434 24.8619 21.6951 24.9071 21.9588C24.9284 22.076 24.9378 22.1998 24.9378 22.329C24.9378 23.5608 23.9353 24.5636 22.7025 24.5649Z" fill="#0B0A0D" />
+                            <path d="M31.3268 17.9383C31.0646 14.9739 29.7066 12.2239 27.5033 10.1957C25.2866 8.15546 22.411 7.03149 19.4035 7.03149C12.8028 7.03149 7.43224 12.4036 7.43224 19.0063C7.43224 21.2223 8.0433 23.381 9.20022 25.2614L6.62012 30.9744L14.881 30.0942C16.3175 30.6828 17.8379 30.9811 19.4022 30.9811C19.8135 30.9811 20.2356 30.9598 20.6589 30.9158C21.0317 30.8759 21.4085 30.8173 21.7786 30.7427C27.3063 29.6254 31.3415 24.718 31.3734 19.0702V19.0063C31.3734 18.6467 31.3575 18.2872 31.3255 17.9396L31.3268 17.9383ZM15.1992 27.5865L10.6287 28.0739L11.9934 25.0496L11.7204 24.6834C11.7005 24.6568 11.6805 24.6301 11.6579 24.5995C10.473 22.9628 9.84725 21.0292 9.84725 19.0076C9.84725 13.7367 14.1341 9.44856 19.4035 9.44856C24.34 9.44856 28.5244 13.3012 28.9278 18.2192C28.9491 18.4829 28.9611 18.7479 28.9611 19.009C28.9611 19.0835 28.9597 19.1568 28.9584 19.2353C28.8572 23.6447 25.7779 27.3894 21.4697 28.343C21.1409 28.4162 20.8041 28.4721 20.4686 28.5081C20.1198 28.548 19.7616 28.568 19.4062 28.568C18.1401 28.568 16.9099 28.323 15.7477 27.8382C15.6185 27.7863 15.4921 27.7304 15.3736 27.6731L15.2005 27.5892L15.1992 27.5865Z" fill="#0B0A0D" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="hover__svg" width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="hover__svg-path" d="M19.0433 0H18.9567C8.48721 0 0 8.48972 0 18.9623V19.0489C0 29.5215 8.48721 38.0112 18.9567 38.0112H19.0433C29.5128 38.0112 38 29.5215 38 19.0489V18.9623C38 8.48972 29.5128 0 19.0433 0Z" fill="#fff" />
+                            <path d="M7.19712 18.3577C7.25037 18.3311 7.30365 18.3058 7.35557 18.2818C8.25821 17.8637 9.17283 17.4721 10.0861 17.0806C10.1354 17.0806 10.2179 17.0233 10.2645 17.0047C10.3351 16.9741 10.4056 16.9448 10.4762 16.9141C10.612 16.8555 10.7478 16.7983 10.8822 16.7397C11.1538 16.6238 11.4241 16.508 11.6957 16.3921L13.3212 15.6956C14.4049 15.2322 15.49 14.7674 16.5737 14.304C17.6574 13.8405 18.7424 13.3758 19.8261 12.9123C20.9098 12.4489 21.9948 11.9841 23.0785 11.5207C24.1622 11.0573 25.2473 10.5925 26.3309 10.129C26.5719 10.0252 26.8329 9.87069 27.0911 9.82541C27.3081 9.78679 27.5198 9.71222 27.7381 9.67093C28.1522 9.59236 28.6088 9.5604 29.0056 9.7322C29.1427 9.79212 29.2692 9.87602 29.3743 9.98123C29.8776 10.4793 29.807 11.297 29.7005 11.9974C28.959 16.8795 28.2174 21.7629 27.4745 26.645C27.3734 27.3149 27.2349 28.05 26.7064 28.4734C26.259 28.8317 25.6227 28.8716 25.0702 28.7198C24.5177 28.5667 24.0304 28.2457 23.5525 27.9301C21.5701 26.617 19.5865 25.304 17.6041 23.9909C17.1328 23.6793 16.6083 23.2718 16.6136 22.7058C16.6163 22.3649 16.8199 22.0612 17.0276 21.7909C18.7504 19.543 21.236 17.9982 23.0852 15.8541C23.3461 15.5518 23.5511 15.0058 23.193 14.8313C22.98 14.7275 22.735 14.8686 22.5406 15.0031C20.0963 16.7011 17.6534 18.4003 15.2091 20.0983C14.4116 20.6523 13.5755 21.2222 12.6143 21.3581C11.7543 21.4806 10.8889 21.2409 10.0568 20.9959C9.35922 20.7908 8.66291 20.5804 7.96929 20.3633C7.60051 20.2488 7.21975 20.1249 6.93485 19.8652C6.64995 19.6055 6.48621 19.1687 6.65796 18.8225C6.76579 18.6054 6.97481 18.4683 7.19448 18.3564L7.19712 18.3577Z" fill="#0B0A0D" />
+                        </svg>
+                    </a>
+                </div>
+                <button class="header__button-main hover__button">
+                    <span class="text">Aloitetaan</span>
+                </button>
+                <div class="header__lang">
+                    <a href="#" class="header__lang-item active">
+                        <span class="text hover__text">En</span>
+                        <span class="header__lang-line">
+                            <svg width="5" height="2" viewBox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.58057 1L-7.88569e-05 1" stroke="#FEE348" stroke-width="2" />
+                            </svg>
+                        </span>
+                    </a>
+
+                    <a href="#" class="header__lang-item">
+                        <span class="text hover__text">Fi</span>
+                        <span class="header__lang-line">
+                            <svg width="5" height="2" viewBox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.58057 1L-7.88569e-05 1" stroke="#FEE348" stroke-width="2" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <button class="header__burger">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 32H32M2 2H32M2 17H32" stroke="white" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="burger">
+                <button class="burger__close">
+                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.9309 42.215L42.2151 13.9307" stroke="#FEE348" />
+                        <path d="M41.9308 42.922L13.6465 14.6377" stroke="#FEE348" />
+                    </svg>
+                </button>
+                <nav>
+                    <ul class="header__menu mob">
+                        <li class="header__serviceJS">
+                            <button class="header__menu-item header__menuJS text">
+                                <span>Palvelut</span>
+                                <div class="header__menu-more">
+                                    <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 0.5L18 13.7549L7 26.5" stroke="#FEE348" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="header__service">
+                                <a href="#" class="header__service-item text hover__text">Sosiaalinen media</a>
+                                <a href="#" class="header__service-item text hover__text">Nettisivut</a>
+                                <a href="#" class="header__service-item text hover__text">Visuaalinen tuotanto</a>
+                                <a href="#" class="header__service-item text hover__text">Brändituotteet</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="header__menu-item text hover__text">Referenssit</a></li>
+                        <li><a href="#" class="header__menu-item text hover__text">Ajankohtaista</a></li>
+                        <li><a href="#" class="header__menu-item text hover__text">Meistä</a></li>
+                        <li><a href="#" class="header__menu-item text hover__text">Yhteystiedot</a></li> 
+                    </ul>
+                </nav>
+                <div class="burger__buttons">
+                    <div class="burger__buttons-left">
+                        <div class="header__button-social">
+                            <a href="#">
+                                <svg class="hover__svg" width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="hover__svg-path" d="M19.0433 0H18.9567C8.48722 0 0 8.48972 0 18.9623V19.0489C0 29.5215 8.48722 38.0112 18.9567 38.0112H19.0433C29.5128 38.0112 38 29.5215 38 19.0489V18.9623C38 8.48972 29.5128 0 19.0433 0Z" fill="#fff" />
+                                    <path d="M22.7025 24.5649C17.8391 24.5649 13.8824 20.6057 13.8811 15.741C13.8824 14.5078 14.8863 13.505 16.1164 13.505C16.2429 13.505 16.368 13.5157 16.4878 13.537C16.7514 13.5809 17.0017 13.6702 17.2321 13.8047C17.2653 13.8246 17.288 13.8566 17.2933 13.8939L17.8072 17.1339C17.8138 17.1712 17.8019 17.2099 17.7766 17.2378C17.493 17.5521 17.1309 17.7785 16.7275 17.8917L16.5331 17.9463L16.6063 18.1341C17.2693 19.8227 18.6193 21.1717 20.3087 21.8376L20.4965 21.9121L20.551 21.7177C20.6642 21.3142 20.8905 20.952 21.2047 20.6683C21.2274 20.647 21.258 20.6364 21.2886 20.6364C21.2953 20.6364 21.3019 20.6364 21.3099 20.6377L24.549 21.1517C24.5876 21.1584 24.6196 21.1797 24.6395 21.213C24.7727 21.4434 24.8619 21.6951 24.9071 21.9588C24.9284 22.076 24.9378 22.1998 24.9378 22.329C24.9378 23.5608 23.9353 24.5636 22.7025 24.5649Z" fill="#0B0A0D" />
+                                    <path d="M31.3268 17.9383C31.0646 14.9739 29.7066 12.2239 27.5033 10.1957C25.2866 8.15546 22.411 7.03149 19.4035 7.03149C12.8028 7.03149 7.43224 12.4036 7.43224 19.0063C7.43224 21.2223 8.0433 23.381 9.20022 25.2614L6.62012 30.9744L14.881 30.0942C16.3175 30.6828 17.8379 30.9811 19.4022 30.9811C19.8135 30.9811 20.2356 30.9598 20.6589 30.9158C21.0317 30.8759 21.4085 30.8173 21.7786 30.7427C27.3063 29.6254 31.3415 24.718 31.3734 19.0702V19.0063C31.3734 18.6467 31.3575 18.2872 31.3255 17.9396L31.3268 17.9383ZM15.1992 27.5865L10.6287 28.0739L11.9934 25.0496L11.7204 24.6834C11.7005 24.6568 11.6805 24.6301 11.6579 24.5995C10.473 22.9628 9.84725 21.0292 9.84725 19.0076C9.84725 13.7367 14.1341 9.44856 19.4035 9.44856C24.34 9.44856 28.5244 13.3012 28.9278 18.2192C28.9491 18.4829 28.9611 18.7479 28.9611 19.009C28.9611 19.0835 28.9597 19.1568 28.9584 19.2353C28.8572 23.6447 25.7779 27.3894 21.4697 28.343C21.1409 28.4162 20.8041 28.4721 20.4686 28.5081C20.1198 28.548 19.7616 28.568 19.4062 28.568C18.1401 28.568 16.9099 28.323 15.7477 27.8382C15.6185 27.7863 15.4921 27.7304 15.3736 27.6731L15.2005 27.5892L15.1992 27.5865Z" fill="#0B0A0D" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="hover__svg" width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="hover__svg-path" d="M19.0433 0H18.9567C8.48721 0 0 8.48972 0 18.9623V19.0489C0 29.5215 8.48721 38.0112 18.9567 38.0112H19.0433C29.5128 38.0112 38 29.5215 38 19.0489V18.9623C38 8.48972 29.5128 0 19.0433 0Z" fill="#fff" />
+                                    <path d="M7.19712 18.3577C7.25037 18.3311 7.30365 18.3058 7.35557 18.2818C8.25821 17.8637 9.17283 17.4721 10.0861 17.0806C10.1354 17.0806 10.2179 17.0233 10.2645 17.0047C10.3351 16.9741 10.4056 16.9448 10.4762 16.9141C10.612 16.8555 10.7478 16.7983 10.8822 16.7397C11.1538 16.6238 11.4241 16.508 11.6957 16.3921L13.3212 15.6956C14.4049 15.2322 15.49 14.7674 16.5737 14.304C17.6574 13.8405 18.7424 13.3758 19.8261 12.9123C20.9098 12.4489 21.9948 11.9841 23.0785 11.5207C24.1622 11.0573 25.2473 10.5925 26.3309 10.129C26.5719 10.0252 26.8329 9.87069 27.0911 9.82541C27.3081 9.78679 27.5198 9.71222 27.7381 9.67093C28.1522 9.59236 28.6088 9.5604 29.0056 9.7322C29.1427 9.79212 29.2692 9.87602 29.3743 9.98123C29.8776 10.4793 29.807 11.297 29.7005 11.9974C28.959 16.8795 28.2174 21.7629 27.4745 26.645C27.3734 27.3149 27.2349 28.05 26.7064 28.4734C26.259 28.8317 25.6227 28.8716 25.0702 28.7198C24.5177 28.5667 24.0304 28.2457 23.5525 27.9301C21.5701 26.617 19.5865 25.304 17.6041 23.9909C17.1328 23.6793 16.6083 23.2718 16.6136 22.7058C16.6163 22.3649 16.8199 22.0612 17.0276 21.7909C18.7504 19.543 21.236 17.9982 23.0852 15.8541C23.3461 15.5518 23.5511 15.0058 23.193 14.8313C22.98 14.7275 22.735 14.8686 22.5406 15.0031C20.0963 16.7011 17.6534 18.4003 15.2091 20.0983C14.4116 20.6523 13.5755 21.2222 12.6143 21.3581C11.7543 21.4806 10.8889 21.2409 10.0568 20.9959C9.35922 20.7908 8.66291 20.5804 7.96929 20.3633C7.60051 20.2488 7.21975 20.1249 6.93485 19.8652C6.64995 19.6055 6.48621 19.1687 6.65796 18.8225C6.76579 18.6054 6.97481 18.4683 7.19448 18.3564L7.19712 18.3577Z" fill="#0B0A0D" />
+                                </svg>
+                            </a>
+                        </div>
+                        <a class="burger__tel" href="tel:+79672356587">+7 967 235-65-87</a>
+                    </div>
+                    <div class="burger__buttons-right">
+                        <div class="header__lang">
+                            <a href="#" class="header__lang-item active">
+                                <span class="text hover__text">En</span>
+                                <span class="header__lang-line">
+                                    <svg width="5" height="2" viewBox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.58057 1L-7.88569e-05 1" stroke="#FEE348" stroke-width="2" />
+                                    </svg>
+                                </span>
+                            </a>
+
+                            <a href="#" class="header__lang-item">
+                                <span class="text hover__text">Fi</span>
+                                <span class="header__lang-line">
+                                    <svg width="5" height="2" viewBox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.58057 1L-7.88569e-05 1" stroke="#FEE348" stroke-width="2" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="opacite"></div>
+        <div class="Project">
+            <div class="container">
+                <div class="Project__row row">
+                    <div class="Project__breadcrumbs">
+                        <p class="text">
+                            <span>Главная</span>
+                            <span>/ Работы</span>
+                        </p>
+                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.1623 21.0673C15.2187 25.0821 8.58756 24.5597 5.96321 21.9291C3.33886 19.2986 3.69436 11.7927 8.24559 7.59701C12.7968 3.4013 19.154 3.01542 22.4447 6.73513C25.7354 10.4548 24.7135 16.8715 20.1623 21.0673Z" fill="#FEE348" />
+                            <ellipse cx="2.47017" cy="3.07883" rx="2.47017" ry="3.07883" transform="matrix(0.662596 0.748977 -0.73524 0.677806 22.4175 3.02051)" fill="#FEE348" />
+                            <path d="M8.4292 22.976C7.179 24.1285 5.15036 23.8358 4.5288 23.2128C3.99061 22.6733 3.90556 20.4283 5.15575 19.2758C6.40595 18.1233 8.15222 18.0173 9.05616 19.0391C9.96009 20.0608 9.6794 21.8235 8.4292 22.976Z" fill="#FEE348" />
+                        </svg>
+                    </div>
+                    <h1 class="title">Проекты</h1>
+                    <div class="Project__filters">
+                        <button class="project__button">
+                            <span class="text">Nettisivut</span>
+                        </button>
+                        <button class="project__button">
+                            <span class="text">Instagram</span>
+                        </button>
+                        <button class="project__button">
+                            <span class="text">Tiktok</span>
+                        </button>
+                        <button class="project__button">
+                            <span class="text">Käyntikortit</span>
+                        </button>
+                        <button class="project__button">
+                            <span class="text">Logo</span>
+                        </button>
+                        <button class="project__button">
+                            <span class="text">Lahjakortit</span>
+                        </button>
+                        <button class="project__button">
+                            <span class="text">Mainokset</span>
+                        </button>
+                        <button class="project__button">
+                            <span class="text">Arvonnat</span>
+                        </button>
+                        <button class="project__button">
+                            <span class="text">Flyerit</span>
+                        </button>
+                        <button class="project__button">
+                            <span class="text">Muut</span>
+                        </button>
+                        <button class="project__button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#191919" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span class="text">Palauta</span>
+                        </button>
+                    </div>
+                    <div class="Project__grids">
+                        <div class="project__grid Project__grid">
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
+                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-3.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-1.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-4.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
+                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-2.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-6.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-5.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-1.jpg" alt="project">
+                            </a>
+                        </div>
+                        <div class="project__grid Project__grid">
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
+                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-3.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-1.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-4.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
+                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-2.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-6.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-5.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-1.jpg" alt="project">
+                            </a>
+                        </div>
+                        <div class="project__grid Project__grid">
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
+                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-3.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-1.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-4.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
+                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-2.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-6.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-5.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-1.jpg" alt="project">
+                            </a>
+                        </div>
+                        <div class="project__grid Project__grid">
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
+                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-3.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-1.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-4.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
+                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-2.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-6.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-5.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-1.jpg" alt="project">
+                            </a>
+                        </div>
+                        <div class="project__grid Project__grid">
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
+                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-3.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-1.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-4.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
+                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-2.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-6.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-5.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-1.jpg" alt="project">
+                            </a>
+                        </div>
+                        <div class="project__grid Project__grid">
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
+                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-3.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-1.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-4.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
+                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-2.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-6.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-5.jpg" alt="project">
+                            </a>
+                            <a href="#" class="project__grid-item">
+                                <div class="project__overlay">
+                                    <div class="project__overlay-chip">
+                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
+                                    </div>
+                                    <div class="project__overlay-text">
+                                        <span class="text">подробнее</span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
+                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <img src="assets/image/project-1.jpg" alt="project">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row row">
+                <div class="footer__top">
+                    <a href="index.html" class="footer__logo">
+                        <img src="assets/image/footer__logo.png" alt="logo">
+                        <img src="assets/image/footer__logo-text.png" alt="logo">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="footer__menu">
+                            <li><a href="#" class="text hover__text">Ajankohtaista</a></li>
+                            <li><a href="#" class="text hover__text">Lisenssit</a></li>
+                            <li><a href="#" class="text hover__text">Yhteystiedot</a></li>
+                            <li><a href="#" class="text hover__text">Meistä</a></li>
+                        </ul>
+                        <ul class="footer__menu footer__menu-second">
+                            <li><a href="#" class="text">Referenssit</a></li>
+                            <li class="footer__menu-service">
+                                <a href="#" class="text">Palvelut</a>
+                                <ul class="footer__menu-mini">
+                                    <li><a href="#" class="content hover__text">Sosiaalinen media</a></li>
+                                    <li><a href="#" class="content hover__text">Nettisivut</a></li>
+                                    <li><a href="#" class="content hover__text">Visuaalinen tuotanto</a></li>
+                                    <li><a href="#" class="content hover__text">Brändituotteet</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__social">
+                        <div class="header__button-social">
+                            <a href="#">
+                                <svg class="hover__svg" width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="hover__svg-path" d="M19.0433 0H18.9567C8.48722 0 0 8.48972 0 18.9623V19.0489C0 29.5215 8.48722 38.0112 18.9567 38.0112H19.0433C29.5128 38.0112 38 29.5215 38 19.0489V18.9623C38 8.48972 29.5128 0 19.0433 0Z" fill="#fff" />
+                                    <path d="M22.7025 24.5649C17.8391 24.5649 13.8824 20.6057 13.8811 15.741C13.8824 14.5078 14.8863 13.505 16.1164 13.505C16.2429 13.505 16.368 13.5157 16.4878 13.537C16.7514 13.5809 17.0017 13.6702 17.2321 13.8047C17.2653 13.8246 17.288 13.8566 17.2933 13.8939L17.8072 17.1339C17.8138 17.1712 17.8019 17.2099 17.7766 17.2378C17.493 17.5521 17.1309 17.7785 16.7275 17.8917L16.5331 17.9463L16.6063 18.1341C17.2693 19.8227 18.6193 21.1717 20.3087 21.8376L20.4965 21.9121L20.551 21.7177C20.6642 21.3142 20.8905 20.952 21.2047 20.6683C21.2274 20.647 21.258 20.6364 21.2886 20.6364C21.2953 20.6364 21.3019 20.6364 21.3099 20.6377L24.549 21.1517C24.5876 21.1584 24.6196 21.1797 24.6395 21.213C24.7727 21.4434 24.8619 21.6951 24.9071 21.9588C24.9284 22.076 24.9378 22.1998 24.9378 22.329C24.9378 23.5608 23.9353 24.5636 22.7025 24.5649Z" fill="#0B0A0D" />
+                                    <path d="M31.3268 17.9383C31.0646 14.9739 29.7066 12.2239 27.5033 10.1957C25.2866 8.15546 22.411 7.03149 19.4035 7.03149C12.8028 7.03149 7.43224 12.4036 7.43224 19.0063C7.43224 21.2223 8.0433 23.381 9.20022 25.2614L6.62012 30.9744L14.881 30.0942C16.3175 30.6828 17.8379 30.9811 19.4022 30.9811C19.8135 30.9811 20.2356 30.9598 20.6589 30.9158C21.0317 30.8759 21.4085 30.8173 21.7786 30.7427C27.3063 29.6254 31.3415 24.718 31.3734 19.0702V19.0063C31.3734 18.6467 31.3575 18.2872 31.3255 17.9396L31.3268 17.9383ZM15.1992 27.5865L10.6287 28.0739L11.9934 25.0496L11.7204 24.6834C11.7005 24.6568 11.6805 24.6301 11.6579 24.5995C10.473 22.9628 9.84725 21.0292 9.84725 19.0076C9.84725 13.7367 14.1341 9.44856 19.4035 9.44856C24.34 9.44856 28.5244 13.3012 28.9278 18.2192C28.9491 18.4829 28.9611 18.7479 28.9611 19.009C28.9611 19.0835 28.9597 19.1568 28.9584 19.2353C28.8572 23.6447 25.7779 27.3894 21.4697 28.343C21.1409 28.4162 20.8041 28.4721 20.4686 28.5081C20.1198 28.548 19.7616 28.568 19.4062 28.568C18.1401 28.568 16.9099 28.323 15.7477 27.8382C15.6185 27.7863 15.4921 27.7304 15.3736 27.6731L15.2005 27.5892L15.1992 27.5865Z" fill="#0B0A0D" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="hover__svg" width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="hover__svg-path" d="M19.0433 0H18.9567C8.48721 0 0 8.48972 0 18.9623V19.0489C0 29.5215 8.48721 38.0112 18.9567 38.0112H19.0433C29.5128 38.0112 38 29.5215 38 19.0489V18.9623C38 8.48972 29.5128 0 19.0433 0Z" fill="#fff" />
+                                    <path d="M7.19712 18.3577C7.25037 18.3311 7.30365 18.3058 7.35557 18.2818C8.25821 17.8637 9.17283 17.4721 10.0861 17.0806C10.1354 17.0806 10.2179 17.0233 10.2645 17.0047C10.3351 16.9741 10.4056 16.9448 10.4762 16.9141C10.612 16.8555 10.7478 16.7983 10.8822 16.7397C11.1538 16.6238 11.4241 16.508 11.6957 16.3921L13.3212 15.6956C14.4049 15.2322 15.49 14.7674 16.5737 14.304C17.6574 13.8405 18.7424 13.3758 19.8261 12.9123C20.9098 12.4489 21.9948 11.9841 23.0785 11.5207C24.1622 11.0573 25.2473 10.5925 26.3309 10.129C26.5719 10.0252 26.8329 9.87069 27.0911 9.82541C27.3081 9.78679 27.5198 9.71222 27.7381 9.67093C28.1522 9.59236 28.6088 9.5604 29.0056 9.7322C29.1427 9.79212 29.2692 9.87602 29.3743 9.98123C29.8776 10.4793 29.807 11.297 29.7005 11.9974C28.959 16.8795 28.2174 21.7629 27.4745 26.645C27.3734 27.3149 27.2349 28.05 26.7064 28.4734C26.259 28.8317 25.6227 28.8716 25.0702 28.7198C24.5177 28.5667 24.0304 28.2457 23.5525 27.9301C21.5701 26.617 19.5865 25.304 17.6041 23.9909C17.1328 23.6793 16.6083 23.2718 16.6136 22.7058C16.6163 22.3649 16.8199 22.0612 17.0276 21.7909C18.7504 19.543 21.236 17.9982 23.0852 15.8541C23.3461 15.5518 23.5511 15.0058 23.193 14.8313C22.98 14.7275 22.735 14.8686 22.5406 15.0031C20.0963 16.7011 17.6534 18.4003 15.2091 20.0983C14.4116 20.6523 13.5755 21.2222 12.6143 21.3581C11.7543 21.4806 10.8889 21.2409 10.0568 20.9959C9.35922 20.7908 8.66291 20.5804 7.96929 20.3633C7.60051 20.2488 7.21975 20.1249 6.93485 19.8652C6.64995 19.6055 6.48621 19.1687 6.65796 18.8225C6.76579 18.6054 6.97481 18.4683 7.19448 18.3564L7.19712 18.3577Z" fill="#0B0A0D" />
+                                </svg>
+                            </a>
+                        </div>
+                        <a class="content hover__text" href="mailto:pr@aws.su">pr@aws.su</a>
+                        <a class="content hover__text" href="tel:+79672356587">+7 967 235-65-87</a>
+                    </div>
+                </div>
+                <a href="#" class="footer__bottom">© Веб-студия Artworkshop 2015–2021 | Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>
