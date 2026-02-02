@@ -109,7 +109,163 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
+
+
+    //показать еще проекты
+    (() => {
+        const gridsWrapper = document.querySelector('.Project__grids');
+        if (!gridsWrapper) return;
+
+        const projectGrids = gridsWrapper.querySelectorAll('.project__grid');
+        const projectButton = gridsWrapper.querySelector('.Project__buttonJS');
+
+        if (!projectGrids.length || !projectButton) return;
+
+        const getDisplayMode = () => {
+            return window.innerWidth <= 766 ? 'flex' : 'grid';
+        };
+
+        projectButton.addEventListener('click', () => {
+            const displayMode = getDisplayMode();
+
+            projectGrids.forEach(grid => {
+            grid.style.display = displayMode;
+            });
+
+            projectButton.remove();
+        });
+    })();
+
+
     
+
+
+
+    //фильтры
+    (() => {
+        const prjRoot = document.querySelector('.Project');
+        if (!prjRoot) return;
+
+        const prjFiltersEl = prjRoot.querySelector('.Project__filters');
+        const prjMosaicWrap = prjRoot.querySelector('.Project__grids');
+        const prjResultsWrap = prjRoot.querySelector('.Project__filtered');
+
+        const prjAllCards = prjRoot.querySelectorAll('.project__grid-item');
+
+        // многостраничник: нет нужных узлов — выходим
+        if (!prjFiltersEl || !prjMosaicWrap || !prjResultsWrap || prjAllCards.length === 0) return;
+
+        const prjCardsArr = Array.from(prjAllCards);
+
+        // "якоря", чтобы можно было переносить DOM-ноды туда-сюда и возвращать на место
+        // (важно: так мы не ломаем события/ленивую загрузку/видео и т.п.)
+        const prjAnchors = new Map();
+        prjCardsArr.forEach((card) => {
+            const anchor = document.createComment('card-anchor');
+            card.parentNode.insertBefore(anchor, card);
+            prjAnchors.set(card, anchor);
+        });
+
+        const prjGetActiveFilters = () => {
+            return Array.from(prjFiltersEl.querySelectorAll('.project__button.is-active[data-filter]'))
+            .map((btn) => (btn.dataset.filter || '').trim().toLowerCase())
+            .filter(Boolean);
+        };
+
+        const prjParseTags = (cardEl) => {
+            return (cardEl.dataset.tags || '')
+            .split(',')
+            .map((t) => t.trim().toLowerCase())
+            .filter(Boolean);
+        };
+
+        const prjMoveAllCardsBackToMosaic = () => {
+            prjCardsArr.forEach((card) => {
+            const anchor = prjAnchors.get(card);
+            if (anchor && anchor.parentNode) {
+                anchor.parentNode.insertBefore(card, anchor.nextSibling);
+            }
+            card.hidden = false; // на всякий
+            });
+        };
+
+        const prjRenderResults = (activeFilters) => {
+            // очистить контейнер результатов
+            prjResultsWrap.innerHTML = '';
+
+            // собрать подходящие карточки
+            const matched = prjCardsArr.filter((card) => {
+            const tags = prjParseTags(card);
+            return activeFilters.some((f) => tags.includes(f)); // OR-логика
+            });
+
+            // если ничего не найдено — можно показать заглушку
+            if (matched.length === 0) {
+            prjResultsWrap.innerHTML = '<div class="Project__empty">Nothing found</div>';
+            return;
+            }
+
+            // переносим подходящие карточки в результаты
+            // важно: при переносе из мозаики они исчезнут оттуда — это то, что нужно в режиме фильтра
+            const frag = document.createDocumentFragment();
+            matched.forEach((card) => {
+            card.hidden = false;
+            frag.appendChild(card);
+            });
+
+            prjResultsWrap.appendChild(frag);
+        };
+
+        const prjSetMode = (isFiltering) => {
+            prjRoot.classList.toggle('is-filtering', isFiltering);
+
+            // скрываем/показываем контейнеры
+            prjMosaicWrap.style.display = isFiltering ? 'none' : '';
+            prjResultsWrap.hidden = !isFiltering;
+        };
+
+        const prjApply = () => {
+            const active = prjGetActiveFilters();
+
+            if (active.length === 0) {
+            // режим мозаики
+            prjSetMode(false);
+            prjResultsWrap.innerHTML = '';
+            prjMoveAllCardsBackToMosaic();
+            return;
+            }
+
+            // режим результатов
+            prjSetMode(true);
+            prjRenderResults(active);
+        };
+
+        prjFiltersEl.addEventListener('click', (e) => {
+            const btn = e.target.closest('.project__button');
+            if (!btn) return;
+
+            // Reset
+            if (btn.hasAttribute('data-reset')) {
+            prjFiltersEl
+                .querySelectorAll('.project__button.is-active[data-filter]')
+                .forEach((b) => b.classList.remove('is-active'));
+
+            prjApply();
+            return;
+            }
+
+            // Toggle filter
+            if (!btn.hasAttribute('data-filter')) return;
+
+            btn.classList.toggle('is-active');
+            prjApply();
+        });
+
+        // старт
+        prjApply();
+    })();
+
+
 
 
 
