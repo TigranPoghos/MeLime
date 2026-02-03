@@ -556,6 +556,66 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+    //специализация
+    (() => {
+        const spFilter = document.querySelector('.special__filter');
+        if (!spFilter) return;
+
+        const spChips = spFilter.querySelectorAll('.special__chip');
+        const spMobileContents = spFilter.querySelectorAll('.special__content-mob');
+        const spDeskContents = spFilter.querySelectorAll('.special__content .text');
+
+        if (!spChips.length) return;
+
+        // deactivate all
+        const spDeactivateAll = () => {
+            spChips.forEach(ch => ch.classList.remove('active'));
+            spMobileContents.forEach(mc => mc.classList.remove('active'));
+            spDeskContents.forEach(dc => dc.classList.remove('active'));
+        };
+
+        // activate tab (desktop)
+        const spActivateDesktop = (idx) => {
+            spDeactivateAll();
+            spChips[idx].classList.add('active');
+
+            if (spDeskContents[idx]) {
+            spDeskContents[idx].classList.add('active');
+            }
+        };
+
+        // activate accordion (mobile)
+        const spActivateMobile = (idx) => {
+            // toggle: if already active — close, else open
+            const isOpen = spMobileContents[idx]?.classList.contains('active');
+
+            spDeactivateAll();
+
+            if (!isOpen) {
+            spChips[idx].classList.add('active');
+            spMobileContents[idx].classList.add('active');
+            }
+        };
+
+        const spHandleClick = (index) => {
+            const isMobile = window.innerWidth <= 767;
+            if (isMobile) {
+            spActivateMobile(index);
+            } else {
+            spActivateDesktop(index);
+            }
+        };
+
+        spChips.forEach((chip, i) => {
+            chip.addEventListener('click', () => spHandleClick(i));
+        });
+
+        // init: desktop default — show first
+        if (window.innerWidth > 767) {
+            spActivateDesktop(0);
+        }
+    })();
+
 
 
 
