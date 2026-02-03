@@ -445,6 +445,116 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+    //услуги
+    (() => {
+        const turnAccLists = document.querySelectorAll('.turn__item-right');
+        if (!turnAccLists.length) return;
+
+        const TURN_ACC_BTN_ACTIVE = 'turnAcc-btn';
+        const TURN_ACC_CONTENT_OPEN = 'turnAcc-open';
+
+        // закрыть все аккордеоны на странице (чтобы при клике в одном закрывать другие — опционально)
+        const closeAllAccordions = () => {
+            turnAccLists.forEach((list) => {
+            list.querySelectorAll('.turn__item-content').forEach(c => c.classList.remove(TURN_ACC_CONTENT_OPEN));
+            list.querySelectorAll('.turn__item-open').forEach(b => b.classList.remove(TURN_ACC_BTN_ACTIVE));
+            });
+        };
+
+        turnAccLists.forEach((turnAccList) => {
+            const turnAccButtons = turnAccList.querySelectorAll('.turn__item-open');
+            const turnAccContents = turnAccList.querySelectorAll('.turn__item-content');
+
+            if (!turnAccButtons.length || !turnAccContents.length) return;
+
+            const turnAccCloseThis = () => {
+            turnAccContents.forEach((c) => c.classList.remove(TURN_ACC_CONTENT_OPEN));
+            turnAccButtons.forEach((b) => b.classList.remove(TURN_ACC_BTN_ACTIVE));
+            };
+
+            // клики внутри конкретного списка
+            turnAccList.addEventListener('click', (e) => {
+            const btn = e.target.closest('.turn__item-open');
+            if (!btn || !turnAccList.contains(btn)) return;
+
+            const li = btn.closest('li');
+            if (!li) return;
+
+            const content = li.querySelector('.turn__item-content');
+            if (!content) return;
+
+            const wasOpen = content.classList.contains(TURN_ACC_CONTENT_OPEN);
+
+            // если хочешь, чтобы открытие в одном списке закрывало все остальные — включи:
+            closeAllAccordions();
+
+            // если нужно закрывать только внутри текущего списка — замени строку выше на:
+            // turnAccCloseThis();
+
+            if (!wasOpen) {
+                content.classList.add(TURN_ACC_CONTENT_OPEN);
+                btn.classList.add(TURN_ACC_BTN_ACTIVE);
+            }
+            });
+
+            // клик вне — закрыть только этот список
+            document.addEventListener('click', (e) => {
+            const clickedInside = turnAccList.contains(e.target);
+            if (!clickedInside) turnAccCloseThis();
+            });
+        });
+    })();
+
+
+
+    //вопросы
+    (() => {
+        const questionAccItems = document.querySelectorAll('.question__list-item');
+        if (!questionAccItems.length) return;
+
+        const questionAccCloseAll = () => {
+            questionAccItems.forEach((item) => {
+            const content = item.querySelector('.question__content');
+            const svg = item.querySelector('svg');
+
+            if (content) content.classList.remove('active');
+            if (svg) svg.classList.remove('active');
+            });
+        };
+
+        questionAccItems.forEach((questionAccItem) => {
+            const questionAccButton = questionAccItem.querySelector('button.service__text');
+            const questionAccContent = questionAccItem.querySelector('.question__content');
+            const questionAccSvg = questionAccItem.querySelector('svg');
+
+            if (!questionAccButton || !questionAccContent || !questionAccSvg) return;
+
+            questionAccButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+
+            const wasOpen = questionAccContent.classList.contains('active');
+
+            // закрываем все
+            questionAccCloseAll();
+
+            // если кликнули по уже открытому — оставляем закрытым, иначе открываем текущий
+            if (!wasOpen) {
+                questionAccContent.classList.add('active');
+                questionAccSvg.classList.add('active');
+            }
+            });
+        });
+
+        // клик вне области вопросов — закрыть всё
+        document.addEventListener('click', (e) => {
+            const clickedInside = Array.from(questionAccItems).some(item => item.contains(e.target));
+            if (!clickedInside) questionAccCloseAll();
+        });
+    })();
+
+
+
+
 
 
 
