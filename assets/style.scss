@@ -445,12 +445,14 @@ body {
 
     &__second {
         height: 70dvh;
+        display: flex;
+        flex-direction: column;
 
         &-row {
             flex-direction: column;
             max-width: 796px;
             text-align: center;
-            padding-top: 150px;
+            padding-top: 30px;
         }
 
         &-title {
@@ -550,6 +552,20 @@ body {
         margin-left: auto;
         margin-right: auto;
         gap: 10px;
+    }
+
+    & .first__container {
+        display: flex;
+        justify-content: start;
+        height: auto;
+        position: relative;
+        align-items: start;
+
+        & .Project {
+            &__breadcrumbs {
+                margin-top: 120px;
+            }
+        }
     }
 
     &__client {
