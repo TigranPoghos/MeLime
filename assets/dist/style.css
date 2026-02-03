@@ -44,10 +44,10 @@ html,
 body {
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 
 html {
-  height: 100%;
   scrollbar-width: thin;
 }
 
@@ -1285,11 +1285,18 @@ body.hidden {
   gap: 4px;
   margin-bottom: 45px;
 }
+.Project__breadcrumbs .text {
+  display: flex;
+  align-items: center;
+}
+.Project__breadcrumbs .text svg {
+  margin-left: 5px;
+}
 .Project__breadcrumbs .text a {
   color: #fee348;
   opacity: 0.5;
 }
-.Project__breadcrumbs .text a:last-child {
+.Project__breadcrumbs .text a:last-of-type {
   opacity: 1;
 }
 .Project__filters {
@@ -1356,6 +1363,11 @@ body.hidden {
 }
 .Article .article__big[hidden] {
   display: none !important;
+}
+
+.policy__text {
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 .mob {
@@ -1464,7 +1476,7 @@ body.hidden {
     height: auto;
   }
   .title {
-    font-size: 32px;
+    font-size: 40px;
   }
   .rule {
     margin-bottom: 90px;
@@ -2181,6 +2193,9 @@ body.hidden {
   }
   .article__small-item {
     padding: 20px;
+  }
+  .policy .title {
+    font-size: 30px;
   }
   .popup__button {
     padding: 5px 20px;

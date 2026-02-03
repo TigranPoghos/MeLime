@@ -44,10 +44,10 @@ html,
 body {
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 
 html {
-    height: 100%;
     scrollbar-width: thin;
 }
 
@@ -1568,11 +1568,18 @@ body {
         margin-bottom: 45px;
 
         & .text {
+            display: flex;
+            align-items: center;
+
+            & svg {
+                margin-left: 5px;
+            }
+            
             & a {
                 color: #fee348;
                 opacity: .5;
 
-                &:last-child {
+                &:last-of-type {
                     opacity: 1;
                 }
             }
@@ -1666,6 +1673,13 @@ body {
                 display: none !important;
             }
         }
+    }
+}
+
+.policy {
+    &__text {
+        margin-top: 60px;
+        margin-bottom: 30px;
     }
 }
 
@@ -1808,7 +1822,7 @@ body {
     }
 
     .title {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .rule {
@@ -2836,6 +2850,12 @@ body {
             &-item {
                 padding: 20px;
             }
+        }
+    }
+
+    .policy {
+        & .title {
+            font-size: 30px;
         }
     }
 
