@@ -197,13 +197,13 @@
             <path d="M1230.72 540.729C1201.85 541.203 1144.92 542.719 1120.34 525.713C1094.94 508.14 1101.07 471.479 1044.14 472.995C988.034 475.077 868.041 514.769 805.856 519.466C743.671 524.163 740.114 494.431 735.737 464.133C731.361 433.835 726.984 403.537 717.353 376.42C708.54 349.87 693.653 325.935 657.745 314.725C621.836 303.515 565.726 305.597 519.307 300.75C472.888 295.903 436.98 284.693 417.657 264.506C397.514 243.752 393.138 213.454 388.761 183.155C384.385 152.857 380.828 123.126 355.43 105.553C330.032 87.9807 283.613 83.1335 264.29 62.9463C244.148 42.1923 250.282 5.53145 203.863 0.684225C158.263 -3.59614 59.2914 23.3703 9.39579 36.57L-39.6806 50.3367" stroke="#FEE348" />
         </svg>
         <div class="opacite"></div>
-        <div class="Project">
+        <div class="Article">
             <div class="container">
-                <div class="Project__row row">
-                    <div class="Project__breadcrumbs">
+                <div class="Article__row row Project__row">
+                    <div class="Project__breadcrumbs Article__breadcrumbs">
                         <p class="text">
                             <a href="index.html"><span>Главная</span></a>
-                            <a href="#"><span>/ Referenssit</span></a>
+                            <a href="#"><span>/ Blogi</span></a>
                         </p>
                         <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20.1623 21.0673C15.2187 25.0821 8.58756 24.5597 5.96321 21.9291C3.33886 19.2986 3.69436 11.7927 8.24559 7.59701C12.7968 3.4013 19.154 3.01542 22.4447 6.73513C25.7354 10.4548 24.7135 16.8715 20.1623 21.0673Z" fill="#FEE348" />
@@ -211,37 +211,16 @@
                             <path d="M8.4292 22.976C7.179 24.1285 5.15036 23.8358 4.5288 23.2128C3.99061 22.6733 3.90556 20.4283 5.15575 19.2758C6.40595 18.1233 8.15222 18.0173 9.05616 19.0391C9.96009 20.0608 9.6794 21.8235 8.4292 22.976Z" fill="#FEE348" />
                         </svg>
                     </div>
-                    <h1 class="title">Meidän projektit</h1>
-                    <div class="Project__filters">
+                    <h1 class="title">Ajankohtaista</h1>
+                    <div class="Project__filters Article__filters">
+                        <button class="project__button" data-filter="some">
+                            <span class="text">Some</span>
+                        </button>
                         <button class="project__button" data-filter="nettisivut">
                             <span class="text">Nettisivut</span>
                         </button>
-                        <button class="project__button" data-filter="instagram">
-                            <span class="text">Instagram</span>
-                        </button>
-                        <button class="project__button" data-filter="tiktok">
-                            <span class="text">Tiktok</span>
-                        </button>
-                        <button class="project__button" data-filter="käyntikortit">
-                            <span class="text">Käyntikortit</span>
-                        </button>
-                        <button class="project__button" data-filter="logo">
-                            <span class="text">Logo</span>
-                        </button>
-                        <button class="project__button" data-filter="lahjakortit">
-                            <span class="text">Lahjakortit</span>
-                        </button>
-                        <button class="project__button" data-filter="mainokset">
-                            <span class="text">Mainokset</span>
-                        </button>
-                        <button class="project__button" data-filter="arvonnat">
-                            <span class="text">Arvonnat</span>
-                        </button>
-                        <button class="project__button" data-filter="flyerit">
-                            <span class="text">Flyerit</span>
-                        </button>
-                        <button class="project__button" data-filter="muut">
-                            <span class="text">Muut</span>
+                        <button class="project__button" data-filter="brändituotteet">
+                            <span class="text">Brändituotteet</span>
                         </button>
                         <button class="project__button" data-reset>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -250,663 +229,179 @@
                             <span class="text">Palauta</span>
                         </button>
                     </div>
-                    <div class="Project__grids">
-                        <div class="project__grid Project__grid">
-                            <a href="#" data-tags="instagram,mainokset" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
-                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                    <div class="Article__wrapper">
+                        <a href="#" data-tags="some" class="article__big">
+                            <div class="article__big-img">
+                                <img src="assets/image/article-item.jpg" alt="article">
+                            </div>
+                            <div class="article__big-content">
+                                <div class="article__big-content-left">
+                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
+                                    <p class="content article__big-content-data">09. 04.2025</p>
+                                    <p class="content">преимущества и недостатки</p>
                                 </div>
-                                <img src="assets/image/project-3.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="tiktok,käyntikortit" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                                <div class="article__big-content-right">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
+                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
+                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
+                                    </svg>
                                 </div>
-                                <img src="assets/image/project-1.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="nettisivut,mainokset" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                            </div>
+                        </a>
+                        <a href="#" data-tags="nettisivut" class="article__big">
+                            <div class="article__big-img">
+                                <img src="assets/image/article-item.jpg" alt="article">
+                            </div>
+                            <div class="article__big-content">
+                                <div class="article__big-content-left">
+                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
+                                    <p class="content article__big-content-data">09. 04.2025</p>
+                                    <p class="content">преимущества и недостатки</p>
                                 </div>
-                                <img src="assets/image/project-4.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="instagram,logo" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
-                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                                <div class="article__big-content-right">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
+                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
+                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
+                                    </svg>
                                 </div>
-                                <img src="assets/image/project-2.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="lahjakortit,arvonnat" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                            </div>
+                        </a>
+                        <a href="#" data-tags="brändituotteet" class="article__big">
+                            <div class="article__big-img">
+                                <img src="assets/image/article-item.jpg" alt="article">
+                            </div>
+                            <div class="article__big-content">
+                                <div class="article__big-content-left">
+                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
+                                    <p class="content article__big-content-data">09. 04.2025</p>
+                                    <p class="content">преимущества и недостатки</p>
                                 </div>
-                                <img src="assets/image/project-6.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="flyerit,muut" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                                <div class="article__big-content-right">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
+                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
+                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
+                                    </svg>
                                 </div>
-                                <img src="assets/image/project-5.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="instagram,lahjakortit" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                            </div>
+                        </a>
+                        <a href="#" data-tags="some" class="article__big">
+                            <div class="article__big-img">
+                                <img src="assets/image/article-item.jpg" alt="article">
+                            </div>
+                            <div class="article__big-content">
+                                <div class="article__big-content-left">
+                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
+                                    <p class="content article__big-content-data">09. 04.2025</p>
+                                    <p class="content">преимущества и недостатки</p>
                                 </div>
-                                <img src="assets/image/project-1.jpg" alt="project">
-                            </a>
-                        </div>
-                        <div class="project__grid Project__grid">
-                            <a href="#" data-tags="instagram,mainokset" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
-                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                                <div class="article__big-content-right">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
+                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
+                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
+                                    </svg>
                                 </div>
-                                <img src="assets/image/project-3.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="tiktok,käyntikortit" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                            </div>
+                        </a>
+                        <a href="#" data-tags="nettisivut" class="article__big">
+                            <div class="article__big-img">
+                                <img src="assets/image/article-item.jpg" alt="article">
+                            </div>
+                            <div class="article__big-content">
+                                <div class="article__big-content-left">
+                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
+                                    <p class="content article__big-content-data">09. 04.2025</p>
+                                    <p class="content">преимущества и недостатки</p>
                                 </div>
-                                <img src="assets/image/project-1.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="nettisivut,mainokset" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                                <div class="article__big-content-right">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
+                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
+                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
+                                    </svg>
                                 </div>
-                                <img src="assets/image/project-4.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="instagram,logo" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
-                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                            </div>
+                        </a>
+                        <a href="#" data-tags="brändituotteet" class="article__big">
+                            <div class="article__big-img">
+                                <img src="assets/image/article-item.jpg" alt="article">
+                            </div>
+                            <div class="article__big-content">
+                                <div class="article__big-content-left">
+                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
+                                    <p class="content article__big-content-data">09. 04.2025</p>
+                                    <p class="content">преимущества и недостатки</p>
                                 </div>
-                                <img src="assets/image/project-2.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="lahjakortit,arvonnat" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                                <div class="article__big-content-right">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
+                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
+                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
+                                    </svg>
                                 </div>
-                                <img src="assets/image/project-6.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="flyerit,muut" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                            </div>
+                        </a>
+                        <a href="#" data-tags="some" class="article__big">
+                            <div class="article__big-img">
+                                <img src="assets/image/article-item.jpg" alt="article">
+                            </div>
+                            <div class="article__big-content">
+                                <div class="article__big-content-left">
+                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
+                                    <p class="content article__big-content-data">09. 04.2025</p>
+                                    <p class="content">преимущества и недостатки</p>
                                 </div>
-                                <img src="assets/image/project-5.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="instagram,lahjakortit" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                                <div class="article__big-content-right">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
+                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
+                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
+                                    </svg>
                                 </div>
-                                <img src="assets/image/project-1.jpg" alt="project">
-                            </a>
-                        </div>
-                        <div class="project__grid Project__grid">
-                            <a href="#" data-tags="instagram,mainokset" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
-                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                            </div>
+                        </a>
+                        <a href="#" data-tags="nettisivut" class="article__big">
+                            <div class="article__big-img">
+                                <img src="assets/image/article-item.jpg" alt="article">
+                            </div>
+                            <div class="article__big-content">
+                                <div class="article__big-content-left">
+                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
+                                    <p class="content article__big-content-data">09. 04.2025</p>
+                                    <p class="content">преимущества и недостатки</p>
                                 </div>
-                                <img src="assets/image/project-3.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="tiktok,käyntikortit" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                                <div class="article__big-content-right">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
+                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
+                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
+                                    </svg>
                                 </div>
-                                <img src="assets/image/project-1.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="nettisivut,mainokset" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                            </div>
+                        </a>
+                        <a href="#" data-tags="brändituotteet" class="article__big">
+                            <div class="article__big-img">
+                                <img src="assets/image/article-item.jpg" alt="article">
+                            </div>
+                            <div class="article__big-content">
+                                <div class="article__big-content-left">
+                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
+                                    <p class="content article__big-content-data">09. 04.2025</p>
+                                    <p class="content">преимущества и недостатки</p>
                                 </div>
-                                <img src="assets/image/project-4.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="instagram,logo" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
-                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
+                                <div class="article__big-content-right">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
+                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
+                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
+                                    </svg>
                                 </div>
-                                <img src="assets/image/project-2.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="lahjakortit,arvonnat" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-6.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="flyerit,muut" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-5.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="instagram,lahjakortit" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-1.jpg" alt="project">
-                            </a>
-                        </div>
-                        <div class="project__grid Project__grid">
-                            <a href="#" data-tags="instagram,mainokset" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
-                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-3.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="tiktok,käyntikortit" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-1.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="nettisivut,mainokset" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-4.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="instagram,logo" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
-                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-2.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="lahjakortit,arvonnat" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-6.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="flyerit,muut" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-5.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="instagram,lahjakortit" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-1.jpg" alt="project">
-                            </a>
-                        </div>
-                        <div class="project__grid Project__grid">
-                            <a href="#" data-tags="instagram,mainokset" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
-                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-3.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="tiktok,käyntikortit" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-1.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="nettisivut,mainokset" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-4.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="instagram,logo" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
-                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-2.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="lahjakortit,arvonnat" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-6.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="flyerit,muut" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-5.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="instagram,lahjakortit" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-1.jpg" alt="project">
-                            </a>
-                        </div>
-                        <div class="project__grid Project__grid">
-                            <a href="#" data-tags="instagram,mainokset" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
-                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-3.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="tiktok,käyntikortit" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-1.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="nettisivut,mainokset" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-4.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="instagram,logo" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн</span></div>
-                                        <div class="project__overlay-text"><span class="text">вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-2.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="lahjakortit,arvonnat" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-6.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="flyerit,muut" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-5.jpg" alt="project">
-                            </a>
-                            <a href="#" data-tags="instagram,lahjakortit" class="project__grid-item">
-                                <div class="project__overlay">
-                                    <div class="project__overlay-chip">
-                                        <div class="project__overlay-text"><span class="text">дизайн/вёрстка</span></div>
-                                    </div>
-                                    <div class="project__overlay-text">
-                                        <span class="text">подробнее</span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.28882 0.5H12.8959V13.0357" stroke="black" />
-                                            <path d="M0.360107 13.5L12.4315 0.964325" stroke="black" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <img src="assets/image/project-1.jpg" alt="project">
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="Project__filtered project__grid" hidden></div>
                     <button class="rule__button Project__buttonJS"><span class="text">Lataa lisää</span></button>
                 </div>
             </div>
