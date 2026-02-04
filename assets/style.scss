@@ -2562,6 +2562,10 @@ body {
         margin-top: -27px;
         border-radius: 20px 20px 0 0;
 
+        &__second {
+            margin-top: 0;
+        }
+
         &__button {
             padding: 7px 14px;
             gap: 14px;
@@ -3011,6 +3015,10 @@ body {
     .project {
         margin-bottom: 60px;
         margin-top: -20px;
+
+        &__second {
+            margin-top: 0;
+        }
 
         &__button {
             padding: 7px 14px;
