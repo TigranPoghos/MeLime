@@ -1869,13 +1869,13 @@ body {
 
     &__item {
         display: flex;
+        text-align: left;
         justify-content: space-between;
         border-radius: 30px;
         padding: 40px;
         gap: 30px;
         box-shadow: inset -2px 3px 5px 0 #fff, 10px 1px 52px 0 rgba(0, 0, 0, 0.15);
-        background-color: #fee348;
-        background-image: linear-gradient(206deg, #fee348 0%, #fff097 100%);
+        background: linear-gradient(206deg, #fee348 0%, #fff097 100%);
 
         &-left {
             display: flex;
@@ -1986,6 +1986,99 @@ body {
                 background: #191919;
                 padding: 10px 30px;
                 border-radius: 60px;
+            }
+        }
+    }
+
+    &__second {
+        border: 2px solid #fee348;
+        background: transparent;
+        box-shadow: none;
+        transition: .6s;
+        position: relative;
+        padding: 30px;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(206deg, #fee348 0%, #fff097 100%);
+            opacity: 0;
+            transition: opacity .6s;
+            z-index: -1;
+        }
+
+        &:hover::before {
+            opacity: 1;
+        }
+
+        &:hover {
+            & .service__title {
+                color: #000;
+            }
+
+            & .text {
+                color: #000;
+            }
+
+            & .turn {
+                &__item {
+                    &-button {
+                        & .content {
+                            background: #000;
+                            color: #FEE348;
+                        }
+                    }
+
+                    &-list {
+                        & li {
+                            color: #000;
+
+                            & .text {
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+
+            box-shadow: inset -2px 3px 5px 0 #fff, 10px 1px 52px 0 rgba(0, 0, 0, 0.15);
+        }
+
+        & .service__title {
+            transition: .6s;
+            color: #FEE348;
+        }
+
+        & .text {
+            transition: .6s;
+            color: #FEE348;
+        }
+
+        & .turn {
+            &__item {
+                &-button {
+                    & .content {
+                        transition: .6s;
+                        background: #FEE348;
+                        color: #000;
+                    }
+                }
+
+                &-list {
+                    gap: 15px;
+
+                    & li {
+                        transition: .6s;
+                        color: #FEE348;
+
+                        & .text {
+                            transition: .6s;
+                            color: #FEE348;
+                        }
+                    }
+                }
             }
         }
     }
