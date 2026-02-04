@@ -618,16 +618,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 'auto',
-      spaceBetween: 20,
-      loop: true,
-      navigation: {
-        nextEl: ".swiper__left",
-        prevEl: ".swiper__right",
-      },
-    });
+    //слайдер
+    const swiperEl = document.querySelector(".mySwiper");
+    if (swiperEl) {
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+            nextEl: ".swiper__left",
+            prevEl: ".swiper__right",
+            },
+        });
+    }
 
 
 
