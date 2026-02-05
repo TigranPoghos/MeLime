@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MeLime</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/dist/style.css">
     <link rel="stylesheet" href="assets/dist/font.css">
 </head>
@@ -173,33 +174,15 @@
         </div>
     </header>
     <main class="main">
-        <svg class="background__lines decs" width="466" height="421" viewBox="0 0 466 421" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <mask id="mask0_197_10555" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="-151" width="501" height="572">
-                <rect x="0.5" y="-150.5" width="500" height="571" rx="19.5" fill="#A068FD" stroke="#FEE348" />
-            </mask>
-            <g mask="url(#mask0_197_10555)">
-                <path d="M1017.59 614.662C988.766 612.876 931.892 609.934 908.719 591.057C884.774 571.552 893.757 535.483 836.883 532.541C780.782 530.228 658.052 560.412 595.69 560.23C533.328 560.049 532.108 530.13 530.114 499.583C528.121 469.035 526.128 438.487 518.647 410.7C511.938 383.542 498.969 358.516 464.048 344.531C429.126 330.547 373.025 328.234 327.128 319.771C281.23 311.307 246.309 297.323 228.624 275.686C210.166 253.42 208.173 222.872 206.18 192.325C204.187 161.777 202.967 131.859 179.021 112.353C155.076 92.8478 109.178 84.3845 91.4936 62.7477C73.0363 40.4816 82.0193 4.41293 36.1218 -4.0504C-9.00335 -11.8845 -109.781 7.2575 -160.557 16.5139L-210.56 26.3995" stroke="#FEE348" />
-                <path d="M1045.54 590.427C1016.71 588.641 959.84 585.699 936.667 566.823C912.722 547.317 921.705 511.249 864.832 508.306C808.73 505.993 686 536.178 623.638 535.996C561.276 535.814 560.056 505.896 558.063 475.348C556.07 444.8 554.077 414.253 546.595 386.466C539.887 359.308 526.917 334.281 491.996 320.297C457.075 306.312 400.973 303.999 355.076 295.536C309.178 287.073 274.257 273.088 256.572 251.451C238.115 229.185 236.122 198.638 234.129 168.09C232.135 137.543 230.915 107.624 206.97 88.1187C183.024 68.6132 137.127 60.1498 119.442 38.513C100.985 16.247 109.968 -19.8217 64.07 -28.285C18.9449 -36.1191 -81.8332 -16.9771 -132.609 -7.72071L-182.611 2.16491" stroke="#FEE348" />
-                <path d="M1031.66 603.964C1002.84 602.178 945.961 599.236 922.789 580.36C898.843 560.854 907.826 524.786 850.953 521.843C794.851 519.53 672.121 549.714 609.759 549.533C547.398 549.351 546.177 519.433 544.184 488.885C542.191 458.337 540.198 427.79 532.717 400.003C526.008 372.845 513.039 347.818 478.117 333.834C443.196 319.849 387.094 317.536 341.197 309.073C295.299 300.61 260.378 286.625 242.693 264.988C224.236 242.722 222.243 212.175 220.25 181.627C218.257 151.079 217.036 121.161 193.091 101.656C169.145 82.1501 123.248 73.6867 105.563 52.0499C87.1056 29.7839 96.0887 -6.28482 50.1911 -14.7482C5.06599 -22.5823 -95.7121 -3.44025 -146.487 5.81615L-196.49 15.7018" stroke="#FEE348" />
-                <path d="M1060.04 580.506C1031.22 578.72 974.347 575.778 951.174 556.902C927.229 537.396 936.212 501.328 879.338 498.385C823.237 496.072 700.507 526.256 638.145 526.075C575.783 525.893 574.563 495.975 572.57 465.427C570.576 434.879 568.583 404.332 561.102 376.545C554.394 349.387 541.424 324.36 506.503 310.376C471.581 296.391 415.48 294.078 369.583 285.615C323.685 277.152 288.764 263.167 271.079 241.53C252.622 219.264 250.628 188.717 248.635 158.169C246.642 127.621 245.422 97.703 221.476 78.1975C197.531 58.692 151.633 50.2287 133.949 28.5919C115.491 6.32588 124.474 -29.7428 78.5769 -38.2062C33.4517 -46.0403 -67.3264 -26.8983 -118.102 -17.6419L-168.105 -7.75624" stroke="#FEE348" />
-                <path d="M1074.24 566.807C1045.42 565.021 988.546 562.079 965.374 543.203C941.428 523.697 950.411 487.629 893.538 484.686C837.436 482.373 714.706 512.558 652.344 512.376C589.983 512.194 588.762 482.276 586.769 451.728C584.776 421.18 582.783 390.633 575.301 362.846C568.593 335.688 555.624 310.661 520.702 296.677C485.781 282.692 429.679 280.379 383.782 271.916C337.884 263.453 302.963 249.468 285.278 227.831C266.821 205.565 264.828 175.018 262.835 144.47C260.842 113.923 259.621 84.0042 235.676 64.4987C211.73 44.9932 165.833 36.5299 148.148 14.893C129.691 -7.37298 138.674 -43.4417 92.7761 -51.905C47.651 -59.7391 -53.1272 -40.5971 -103.902 -31.3407L-153.905 -21.4551" stroke="#FEE348" />
-            </g>
-        </svg>
-        <svg class="mob background__lines-mob" width="375" height="775" viewBox="0 0 375 775" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1177.98 592.869C1149.11 593.344 1092.18 594.859 1067.6 577.853C1042.2 560.281 1048.34 523.62 991.407 525.135C935.297 527.218 815.303 566.91 753.118 571.606C690.934 576.303 687.376 546.572 683 516.274C678.623 485.976 674.247 455.678 664.615 428.561C655.803 402.011 640.916 378.076 605.007 366.866C569.099 355.656 512.989 357.738 466.57 352.891C420.151 348.044 384.243 336.834 364.919 316.646C344.777 295.892 340.401 265.594 336.024 235.296C331.648 204.998 328.09 175.267 302.693 157.694C277.295 140.121 230.876 135.274 211.553 115.087C191.411 94.3329 197.545 57.6721 151.126 52.8249C105.526 48.5445 6.55414 75.5109 -43.3415 88.7107L-92.4179 102.477" stroke="#FEE348" />
-            <path d="M1203.95 566.522C1175.08 566.996 1118.15 568.512 1093.57 551.506C1068.17 533.933 1074.3 497.272 1017.37 498.788C961.264 500.87 841.271 540.562 779.086 545.259C716.901 549.956 713.344 520.224 708.967 489.926C704.591 459.628 700.214 429.33 690.582 402.213C681.77 375.663 666.883 351.728 630.975 340.518C595.066 329.308 538.956 331.39 492.537 326.543C446.118 321.696 410.21 310.486 390.887 290.299C370.744 269.545 366.368 239.247 361.991 208.948C357.615 178.65 354.058 148.919 328.66 131.346C303.262 113.774 256.843 108.926 237.52 88.7393C217.378 67.9853 223.512 31.3244 177.093 26.4772C131.493 22.1968 32.5214 49.1632 -17.3742 62.363L-66.4506 76.1296" stroke="#FEE348" />
-            <path d="M1191.17 581.104C1162.3 581.578 1105.37 583.094 1080.79 566.088C1055.39 548.515 1061.53 511.854 1004.6 513.37C948.486 515.452 828.493 555.144 766.308 559.841C704.123 564.538 700.566 534.806 696.189 504.508C691.813 474.21 687.436 443.912 677.805 416.795C668.992 390.245 654.105 366.31 618.197 355.1C582.288 343.89 526.178 345.972 479.759 341.125C433.34 336.278 397.432 325.068 378.109 304.881C357.966 284.127 353.59 253.829 349.214 223.53C344.837 193.232 341.28 163.501 315.882 145.928C290.485 128.356 244.066 123.509 224.742 103.321C204.6 82.5673 210.734 45.9065 164.315 41.0592C118.716 36.7789 19.7436 63.7453 -30.1521 76.945L-79.2284 90.7117" stroke="#FEE348" />
-            <path d="M1217.64 555.498C1188.76 555.973 1131.83 557.488 1107.25 540.482C1081.86 522.91 1087.99 486.249 1031.06 487.764C974.95 489.847 854.957 529.538 792.772 534.235C730.587 538.932 727.03 509.201 722.653 478.903C718.277 448.605 713.9 418.307 704.269 391.19C695.456 364.64 680.569 340.704 644.661 329.494C608.752 318.285 552.642 320.367 506.223 315.52C459.804 310.672 423.896 299.463 404.573 279.275C384.43 258.521 380.054 228.223 375.677 197.925C371.301 167.627 367.744 137.896 342.346 120.323C316.948 102.75 270.529 97.9031 251.206 77.7159C231.064 56.9618 237.198 20.301 190.779 15.4538C145.179 11.1734 46.2075 38.1398 -3.6882 51.3396L-52.7646 65.1062" stroke="#FEE348" />
-            <path d="M1230.72 540.729C1201.85 541.203 1144.92 542.719 1120.34 525.713C1094.94 508.14 1101.07 471.479 1044.14 472.995C988.034 475.077 868.041 514.769 805.856 519.466C743.671 524.163 740.114 494.431 735.737 464.133C731.361 433.835 726.984 403.537 717.353 376.42C708.54 349.87 693.653 325.935 657.745 314.725C621.836 303.515 565.726 305.597 519.307 300.75C472.888 295.903 436.98 284.693 417.657 264.506C397.514 243.752 393.138 213.454 388.761 183.155C384.385 152.857 380.828 123.126 355.43 105.553C330.032 87.9807 283.613 83.1335 264.29 62.9463C244.148 42.1923 250.282 5.53145 203.863 0.684225C158.263 -3.59614 59.2914 23.3703 9.39579 36.57L-39.6806 50.3367" stroke="#FEE348" />
-        </svg>
         <div class="opacite"></div>
-        <section class="Article">
+        <section id="start" class="blog">
             <div class="container">
-                <div class="Article__row row Project__row">
-                    <div class="Project__breadcrumbs Article__breadcrumbs">
+                <div class="blog__row row">
+                    <div class="Project__breadcrumbs">
                         <p class="text">
                             <a href="index.html"><span>Главная</span></a>
-                            <a href="#"><span>Blogi</span></a>
+                            <a href="project.html"><span>Блог</span></a>
+                            <a href="#"><span>Название</span></a>
                             <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20.1623 21.0673C15.2187 25.0821 8.58756 24.5597 5.96321 21.9291C3.33886 19.2986 3.69436 11.7927 8.24559 7.59701C12.7968 3.4013 19.154 3.01542 22.4447 6.73513C25.7354 10.4548 24.7135 16.8715 20.1623 21.0673Z" fill="#FEE348" />
                                 <ellipse cx="2.47017" cy="3.07883" rx="2.47017" ry="3.07883" transform="matrix(0.662596 0.748977 -0.73524 0.677806 22.4175 3.02051)" fill="#FEE348" />
@@ -207,198 +190,153 @@
                             </svg>
                         </p>
                     </div>
-                    <h1 class="title">Ajankohtaista</h1>
-                    <div class="Project__filters Article__filters">
-                        <button class="project__button">
-                            <span class="text">Some</span>
-                        </button>
-                        <button class="project__button">
-                            <span class="text">Nettisivut</span>
-                        </button>
-                        <button class="project__button">
-                            <span class="text">Brändituotteet</span>
-                        </button>
-                        <button class="project__button">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="project-reset" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <div class="blog__title">
+                        <h1 style="text-align: left;" class="title">Корпоративный сайт для Кубань Ресурс</h1>
+                        <a href="#" class="project__button">
+                            <span class="text">Сайт</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="project-reset" d="M1.43164 0.5H14.8245V14.9643" stroke="black" />
+                                <path class="project-reset" d="M0.360107 15.5L14.2887 1.03571" stroke="black" />
                             </svg>
-                            <span class="text">Palauta</span>
-                        </button>
-                    </div>
-                    <div class="Article__wrapper">
-                        <a href="#" class="article__big">
-                            <div class="article__big-img">
-                                <img src="assets/image/article-item.jpg" alt="article">
-                            </div>
-                            <div class="article__big-content">
-                                <div class="article__big-content-left">
-                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
-                                    <p class="content article__big-content-data">09. 04.2025</p>
-                                    <p class="content">преимущества и недостатки</p>
-                                </div>
-                                <div class="article__big-content-right">
-                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
-                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
-                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="article__big">
-                            <div class="article__big-img">
-                                <img src="assets/image/article-item.jpg" alt="article">
-                            </div>
-                            <div class="article__big-content">
-                                <div class="article__big-content-left">
-                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
-                                    <p class="content article__big-content-data">09. 04.2025</p>
-                                    <p class="content">преимущества и недостатки</p>
-                                </div>
-                                <div class="article__big-content-right">
-                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
-                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
-                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="article__big">
-                            <div class="article__big-img">
-                                <img src="assets/image/article-item.jpg" alt="article">
-                            </div>
-                            <div class="article__big-content">
-                                <div class="article__big-content-left">
-                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
-                                    <p class="content article__big-content-data">09. 04.2025</p>
-                                    <p class="content">преимущества и недостатки</p>
-                                </div>
-                                <div class="article__big-content-right">
-                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
-                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
-                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="article__big">
-                            <div class="article__big-img">
-                                <img src="assets/image/article-item.jpg" alt="article">
-                            </div>
-                            <div class="article__big-content">
-                                <div class="article__big-content-left">
-                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
-                                    <p class="content article__big-content-data">09. 04.2025</p>
-                                    <p class="content">преимущества и недостатки</p>
-                                </div>
-                                <div class="article__big-content-right">
-                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
-                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
-                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="article__big">
-                            <div class="article__big-img">
-                                <img src="assets/image/article-item.jpg" alt="article">
-                            </div>
-                            <div class="article__big-content">
-                                <div class="article__big-content-left">
-                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
-                                    <p class="content article__big-content-data">09. 04.2025</p>
-                                    <p class="content">преимущества и недостатки</p>
-                                </div>
-                                <div class="article__big-content-right">
-                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
-                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
-                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="article__big">
-                            <div class="article__big-img">
-                                <img src="assets/image/article-item.jpg" alt="article">
-                            </div>
-                            <div class="article__big-content">
-                                <div class="article__big-content-left">
-                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
-                                    <p class="content article__big-content-data">09. 04.2025</p>
-                                    <p class="content">преимущества и недостатки</p>
-                                </div>
-                                <div class="article__big-content-right">
-                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
-                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
-                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="article__big">
-                            <div class="article__big-img">
-                                <img src="assets/image/article-item.jpg" alt="article">
-                            </div>
-                            <div class="article__big-content">
-                                <div class="article__big-content-left">
-                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
-                                    <p class="content article__big-content-data">09. 04.2025</p>
-                                    <p class="content">преимущества и недостатки</p>
-                                </div>
-                                <div class="article__big-content-right">
-                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
-                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
-                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="article__big">
-                            <div class="article__big-img">
-                                <img src="assets/image/article-item.jpg" alt="article">
-                            </div>
-                            <div class="article__big-content">
-                                <div class="article__big-content-left">
-                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
-                                    <p class="content article__big-content-data">09. 04.2025</p>
-                                    <p class="content">преимущества и недостатки</p>
-                                </div>
-                                <div class="article__big-content-right">
-                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
-                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
-                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="article__big">
-                            <div class="article__big-img">
-                                <img src="assets/image/article-item.jpg" alt="article">
-                            </div>
-                            <div class="article__big-content">
-                                <div class="article__big-content-left">
-                                    <p class="text">Что такое турбо-страницы от Яндекса?</p>
-                                    <p class="content article__big-content-data">09. 04.2025</p>
-                                    <p class="content">преимущества и недостатки</p>
-                                </div>
-                                <div class="article__big-content-right">
-                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="38" height="38" rx="19" fill="#FEE348" />
-                                        <path d="M10.7217 9.5H27.6858V27.8213" stroke="black" />
-                                        <path d="M9.36432 28.5L27.007 10.1787" stroke="black" />
-                                    </svg>
-                                </div>
-                            </div>
                         </a>
                     </div>
-                    <button class="rule__button Project__buttonJS"><span class="text">Lataa lisää</span></button>
+                    <div class="blog__container">
+                        <div class="blog__content">
+                            <div id="about" class="blog__item-row blog__item-margin">
+                                <div style="justify-content: center; align-items: center;" class="blog__item">
+                                    <h3 class="blog__item-title">О компании</h3>
+                                    <p style="text-align: center;" class="blog__item-subtitle">Кубань Ресурс занимается автономной газификацией домов и коммерческих объектов. Компания продаёт, устанавливает газгольдеры и газовые котлы.</p>
+                                </div>
+                                <div class="blog__img"><img src="assets/image/blog-1.jpg" alt=""></div>
+                            </div>
+                            <div id="situation" class="blog__item-row">
+                                <div style="width: 70%;" class="blog__item">
+                                    <h3 class="blog__item-title">Ситуация</h3>
+                                    <p class="blog__item-subtitle">У компании уже имелся сайт, созданный на конструкторе фрилансером и были настроены рекламные кампании в Google и Яндекс. Положение было не радостное, так как затраты на контекстную рекламу не окупались, а единственный канал привлечения клиентов — интернет, поэтому руководство решило обратиться к нам (по рекомендации 1С: БухОбслуживание — Б.О.Н.Д.).</p>
+                                </div>
+                                <div style="width: 29%; justify-content: space-between;" class="blog__item">
+                                    <p class="blog__item-subtitle">Результат работы с предыдущим подрядчиком.</p>
+                                    <p class="blog__item-text">8 заявок в месяц, при стоимости заявки 2 500 ₽</p>
+                                </div>
+                            </div>
+                            <div class="blog__item-row">
+                                <img src="assets/image/blog-2.jpg" alt="project">
+                            </div>
+                            <div id="target" class="blog__item-row blog__item-margin">
+                                <div class="blog__item">
+                                    <h3 class="blog__item-title">Цель</h3>
+                                    <p class="blog__item-subtitle">Увеличить количество обращений в компанию при сохранении прежнего уровня рекламного бюджета и вывести компанию из кризиса.</p>
+                                </div>
+                                <div class="blog__item">
+                                    <h3 class="blog__item-title">Задача</h3>
+                                    <p class="blog__item-subtitle">Правильно настроить интернет-канал получения обращений клиентов.</p>
+                                </div>
+                            </div>
+                            <div id="design" class="blog__item-row">
+                                <div style="width: 100%;" class="blog__item">
+                                    <h3 class="blog__item-title">Дизайн</h3>
+                                    <p class="blog__item-subtitle">Создали дизайн-макеты под 3 типа устройств (ПК, смартфоны, планшеты), на первый экран добавили видео для создания атмосферы и ассоциации со сферой деятельности компании. Сделали правильные акценты на кнопках и элементах взаимодействия с сайтом.</p>
+                                </div>
+                            </div>
+                            <div class="blog__item-row blog__item-margin">
+                                <img src="assets/image/blog-2.jpg" alt="">
+                            </div>
+                            <div id="result" class="blog__item-row">
+                                <div class="blog__item blog__item-second">
+                                    <h3 class="blog__item-title">Результаты</h3>
+                                    <p class="blog__item-subtitle">Первый месяц работы сайта (без изменения бюджета)</p>
+                                </div>
+                            </div>
+                            <div class="blog__item-wrap">
+                                <div class="blog__item">
+                                    <h3 class="blog__item-title">1</h3>
+                                    <p class="blog__item-subtitle"><b>34 заявки с сайта,</b> без учёта звонков и обращений в Jivosite.</p>
+                                </div>
+                                <div class="blog__item">
+                                    <h3 class="blog__item-title">2</h3>
+                                    <p class="blog__item-subtitle"><b>Стоимость заявки</b> в пределах <b>588 ₽</b></p>
+                                </div>
+                                <div class="blog__item">
+                                    <h3 class="blog__item-title">3</h3>
+                                    <p class="blog__item-subtitle">Конверсия 4,71%.</p>
+                                </div>
+                                <div class="blog__item">
+                                    <h3 class="blog__item-title">4</h3>
+                                    <p class="blog__item-subtitle">Снижение стоимости заявки на 41,2%.</p>
+                                </div>
+                            </div>
+                            <div class="blog__item-row blog__item-without">
+                                <div style="justify-content: space-between; align-items: start;" class="blog__item blog__item-second">
+                                    <div class="blog__item-left">
+                                        <h3 class="blog__item-title">Хотите улучшить ваш сайт?</h3>
+                                        <p class="blog__item-subtitle">Свяжитесь с нами, мы подберём для вас лучшее решение</p>
+                                    </div>
+                                    <div class="header__button-social">
+                                        <a href="#" class="svg__block">
+                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.9612 9.52246C11.9497 10.1243 11.7598 10.7093 11.4155 11.2031C11.0713 11.6969 10.5881 12.0774 10.0273 12.2963C9.46655 12.5153 8.85341 12.5628 8.2656 12.4328C7.6778 12.3029 7.14181 12.0013 6.72558 11.5664C6.30935 11.1315 6.03161 10.5828 5.92758 9.98988C5.82354 9.39694 5.89789 8.78647 6.14121 8.23584C6.38452 7.68521 6.78584 7.21921 7.29429 6.89692C7.80274 6.57463 8.39544 6.41056 8.99725 6.4255C9.79695 6.45512 10.5537 6.79503 11.107 7.37317C11.6603 7.95131 11.9667 8.72223 11.9612 9.52246Z" fill="black" />
+                                                <path d="M14.1529 0H3.84555C2.82565 0 1.84752 0.405155 1.12634 1.12634C0.405155 1.84752 0 2.82565 0 3.84555V14.3847C0 14.8897 0.0994675 15.3898 0.292725 15.8563C0.485982 16.3229 0.769244 16.7468 1.12634 17.1039C1.48343 17.461 1.90736 17.7443 2.37392 17.9375C2.84049 18.1308 3.34055 18.2303 3.84555 18.2303H14.1529C14.6579 18.2303 15.158 18.1308 15.6246 17.9375C16.0911 17.7443 16.515 17.461 16.8721 17.1039C17.2292 16.7468 17.5125 16.3229 17.7058 15.8563C17.899 15.3898 17.9985 14.8897 17.9985 14.3847V3.86455C18.0005 3.35809 17.9025 2.85621 17.7102 2.38768C17.5179 1.91915 17.235 1.49317 16.8778 1.13416C16.5205 0.775157 16.0959 0.490176 15.6284 0.295555C15.1608 0.100933 14.6594 0.000496017 14.1529 0ZM8.99829 14.6735C7.97793 14.6966 6.97386 14.415 6.1142 13.8649C5.25454 13.3148 4.57829 12.521 4.17176 11.5848C3.76522 10.6487 3.64684 9.61264 3.83171 8.60891C4.01659 7.60518 4.49634 6.6793 5.20974 5.94942C5.92314 5.21955 6.83783 4.71879 7.83708 4.51106C8.83633 4.30332 9.87481 4.39803 10.82 4.7831C11.7652 5.16816 12.5742 5.82612 13.1438 6.673C13.7134 7.51988 14.0178 8.51727 14.018 9.53788C14.0263 10.2049 13.903 10.8669 13.6551 11.4862C13.4071 12.1055 13.0395 12.6698 12.5733 13.1468C12.107 13.6238 11.5513 14.0042 10.9378 14.2662C10.3244 14.5282 9.66529 14.6666 8.99829 14.6735ZM14.5766 4.40414C14.4512 4.40417 14.3271 4.37918 14.2115 4.33064C14.0959 4.28209 13.9912 4.21097 13.9034 4.12144C13.8157 4.03191 13.7467 3.92577 13.7004 3.80923C13.6542 3.69269 13.6317 3.5681 13.6342 3.44276C13.6342 3.18778 13.7355 2.94325 13.9158 2.76295C14.0961 2.58266 14.3406 2.48137 14.5956 2.48137C14.8506 2.48137 15.0951 2.58266 15.2754 2.76295C15.4557 2.94325 15.557 3.18778 15.557 3.44276C15.5608 3.57849 15.5352 3.71343 15.482 3.83834C15.4287 3.96326 15.3492 4.07519 15.2487 4.16649C15.1481 4.25779 15.0291 4.3263 14.8997 4.36731C14.7702 4.40833 14.6335 4.4209 14.4987 4.40414H14.5766Z" fill="black" />
+                                            </svg>
+                                        </a>
+                                        <a href="tel:+3584578354303" class="svg__block">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.9909 12.627C15.9528 12.391 15.8049 12.1894 15.5834 12.0696L12.3068 10.1385L12.2798 10.1234C12.1424 10.0546 11.9907 10.0194 11.8371 10.0205C11.5626 10.0205 11.3004 10.1245 11.1185 10.307L10.1514 11.2748C10.11 11.3141 9.97515 11.3711 9.93424 11.3731C9.92304 11.3722 8.80898 11.292 6.758 9.24017C4.71068 7.19272 4.62382 6.07491 4.62314 6.07491C4.62428 6.01775 4.68051 5.88331 4.72051 5.8417L5.5452 5.017C5.83571 4.72571 5.9228 4.24283 5.75046 3.86878L3.92919 0.440814C3.79685 0.168277 3.53971 0 3.25445 0C3.05262 0 2.85788 0.0836815 2.70565 0.235726L0.45764 2.47935C0.242096 2.69381 0.0564953 3.06878 0.0160381 3.37058C-0.00361912 3.51485 -0.402477 6.95859 4.31754 11.6806C8.32463 15.6884 11.4492 15.9998 12.3121 15.9998C12.4171 16.001 12.5222 15.9956 12.6266 15.9836C12.9274 15.9434 13.3018 15.7582 13.516 15.5435L15.7621 13.2969C15.9455 13.1126 16.0291 12.8691 15.9909 12.627Z" fill="black" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="blog__sticky">
+                            <p class="blog__sticky-title">Sisältö</p>
+                            <li><a href="#about">Yrityksestä</a></li>
+                            <li><a href="#situation">Tilanne</a></li>
+                            <li><a href="#target">Tavaitteet</a></li>
+                            <li><a href="#design">Tehtävänanto</a></li>
+                            <li><a href="#result">Tulokset</a></li>
+                            <a href="#start">
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5">
+                                        <path d="M18.9997 4.75L11.083 12.6667M18.9997 4.75L26.9163 12.6667M18.9997 4.75V33.25" stroke="black" stroke-width="3.16667" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="more">
+            <div class="container">
+                <div class="more__row row">
+                    <h2 class="more__title title">Другие работы</h2>
+                    <div class="swiper mySwiper more__swiper">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="swiper-slide"><img src="assets/image/more-1.png" alt="more"></a>
+                            <a href="#" class="swiper-slide"><img src="assets/image/more-2.png" alt="more"></a>
+                            <a href="#" class="swiper-slide"><img src="assets/image/more-3.png" alt="more"></a>
+                            <a href="#" class="swiper-slide"><img src="assets/image/more-1.png" alt="more"></a>
+                            <a href="#" class="swiper-slide"><img src="assets/image/more-2.png" alt="more"></a>
+                            <a href="#" class="swiper-slide"><img src="assets/image/more-3.png" alt="more"></a>
+                            <a href="#" class="swiper-slide"><img src="assets/image/more-1.png" alt="more"></a>
+                            <a href="#" class="swiper-slide"><img src="assets/image/more-2.png" alt="more"></a>
+                            <a href="#" class="swiper-slide"><img src="assets/image/more-3.png" alt="more"></a>
+                        </div>
+                    </div>
+                    <div class="swiper__arrow">
+                        <div class="swiper__right">
+                            <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.7021 25.3041L0.706679 13.3086L13.6618 0.353501" stroke="#FEE348" />
+                                <path d="M27.2072 13.309L1.20702 13.3089" stroke="#FEE348" />
+                            </svg>
+                        </div>
+                        <div class="swiper__left">
+                            <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.5049 0.960205L26.5004 12.9557L13.5452 25.9108" stroke="#FEE348" />
+                                <path d="M-0.00012143 12.9553L26 12.9553" stroke="#FEE348" />
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -478,7 +416,7 @@
         </div>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
     <script src="assets/script/script.js"></script>
