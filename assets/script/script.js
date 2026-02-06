@@ -373,6 +373,87 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+    (() => {
+        const BODY_HIDDEN_CLASS = 'hidden';
+        const POPUP_ACTIVE_CLASS = 'active';
+
+        const openPopup = (name) => {
+            const popup = document.querySelector(`[data-popup="${name}"]`);
+            if (!popup) return;
+
+            closeAllPopups();
+
+            popup.classList.add(POPUP_ACTIVE_CLASS);
+            document.body.classList.add(BODY_HIDDEN_CLASS);
+        };
+
+        const closePopup = (popup) => {
+            if (!popup) return;
+
+            popup.classList.remove(POPUP_ACTIVE_CLASS);
+
+            if (!document.querySelector(`.popup.${POPUP_ACTIVE_CLASS}`)) {
+            document.body.classList.remove(BODY_HIDDEN_CLASS);
+            }
+        };
+
+        const closeAllPopups = () => {
+            document.querySelectorAll(`[data-popup].${POPUP_ACTIVE_CLASS}`)
+            .forEach(popup => popup.classList.remove(POPUP_ACTIVE_CLASS));
+
+            document.body.classList.remove(BODY_HIDDEN_CLASS);
+        };
+
+        // Открытие
+        document.addEventListener('click', (e) => {
+            const openBtn = e.target.closest('[data-popup-open]');
+            if (!openBtn) return;
+
+            e.preventDefault();
+            const popupName = openBtn.dataset.popupOpen;
+            openPopup(popupName);
+        });
+
+        // Закрытие
+        document.addEventListener('click', (e) => {
+            const closeBtn = e.target.closest('[data-popup-close]');
+            if (!closeBtn) return;
+
+            const popup = closeBtn.closest('[data-popup]');
+            closePopup(popup);
+        });
+
+        // Esc
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+            closeAllPopups();
+            }
+        });
+    })();
+
+
+
+
+
+
+
+(() => {
+  const ACTIVE_CLASS = 'active';
+
+  document.addEventListener('click', (e) => {
+    const subtitle = e.target.closest('.history__subtitle');
+    if (!subtitle) return;
+
+    const text = subtitle.nextElementSibling;
+
+    // проверяем, что следующий элемент — нужный текст
+    if (!text || !text.classList.contains('history__text')) return;
+
+    // переключаем
+    subtitle.classList.toggle(ACTIVE_CLASS);
+    text.classList.toggle(ACTIVE_CLASS);
+  });
+})();
 
 
     

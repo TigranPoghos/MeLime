@@ -33,7 +33,7 @@
                     <path d="M0.600098 12.0001V3.90008H1.8601L3.5201 7.80008V3.90008H5.0001V12.0001H3.7901L2.1301 7.80008V12.0001H0.600098ZM5.81557 12.0001L7.34557 3.90008H9.38557L10.8956 12.0001H9.24557L8.97557 10.2901H7.78557L7.50557 12.0001H5.81557ZM7.94557 9.22008H8.80557L8.37557 6.06008L7.94557 9.22008ZM8.80557 3.06008V1.58008H10.1056V3.06008H8.80557ZM6.62557 3.06008V1.58008H7.92557V3.06008H6.62557ZM12.2939 12.0001V8.69008L10.7539 3.90008H12.4439L13.2139 6.46008L13.9039 3.90008H15.5239L14.0139 8.69008V12.0001H12.2939ZM15.2941 12.0001V10.4601H16.8341V12.0001H15.2941Z" fill="white" />
                 </svg>
             </a>
-            <button class="first__button hover__button mob header__mob-button"><span class="text">Ota yhteyttä</span></button>
+            <button data-popup-open="question" class="first__button hover__button mob header__mob-button"><span class="text">Ota yhteyttä</span></button>
             <nav class="decs">
                 <ul class="header__menu">
                     <li class="header__serviceJS">
@@ -73,7 +73,7 @@
                         </svg>
                     </a>
                 </div>
-                <button class="header__button-main hover__button">
+                <button data-popup-open="question" class="header__button-main hover__button">
                     <span class="text">Aloitetaan</span>
                 </button>
                 <div class="header__lang">
@@ -226,7 +226,7 @@
                         </button>
                     </div>
                     <div class="Article__wrapper">
-                        <a href="#" class="article__big">
+                        <a href="blog.html" class="article__big">
                             <div class="article__big-img">
                                 <img src="assets/image/article-item.jpg" alt="article">
                             </div>
@@ -245,7 +245,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="article__big">
+                        <a href="blog.html" class="article__big">
                             <div class="article__big-img">
                                 <img src="assets/image/article-item.jpg" alt="article">
                             </div>
@@ -264,7 +264,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="article__big">
+                        <a href="blog.html" class="article__big">
                             <div class="article__big-img">
                                 <img src="assets/image/article-item.jpg" alt="article">
                             </div>
@@ -283,7 +283,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="article__big">
+                        <a href="blog.html" class="article__big">
                             <div class="article__big-img">
                                 <img src="assets/image/article-item.jpg" alt="article">
                             </div>
@@ -302,7 +302,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="article__big">
+                        <a href="blog.html" class="article__big">
                             <div class="article__big-img">
                                 <img src="assets/image/article-item.jpg" alt="article">
                             </div>
@@ -321,7 +321,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="article__big">
+                        <a href="blog.html" class="article__big">
                             <div class="article__big-img">
                                 <img src="assets/image/article-item.jpg" alt="article">
                             </div>
@@ -340,7 +340,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="article__big">
+                        <a href="blog.html" class="article__big">
                             <div class="article__big-img">
                                 <img src="assets/image/article-item.jpg" alt="article">
                             </div>
@@ -359,7 +359,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="article__big">
+                        <a href="blog.html" class="article__big">
                             <div class="article__big-img">
                                 <img src="assets/image/article-item.jpg" alt="article">
                             </div>
@@ -378,7 +378,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="article__big">
+                        <a href="blog.html" class="article__big">
                             <div class="article__big-img">
                                 <img src="assets/image/article-item.jpg" alt="article">
                             </div>
@@ -403,6 +403,108 @@
             </div>
         </section>
     </main>
+    <div data-popup="question" class="popup__question">
+        <div class="popup__overlay" data-popup-close></div>
+        <div class="question__form">
+            <button class="popup__close" data-popup-close>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 19L10 10M10 10L1 1M10 10L19.0001 1M10 10L1 19.0001" stroke="#191919" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <h3 class="title">Остались вопросы?</h3>
+            <p class="text question__subtitle">Заполините форму и мы ответим на него</p>
+            <form class="popup__form">
+                <div class="popup__form-group">
+                    <input type="text" id="fullName" placeholder="Nimi" required="">
+                </div>
+                <div class="popup__form-group">
+                    <input type="email" id="email" placeholder="Sähköpostiosoite" required="">
+                </div>
+                <div class="popup__form-group">
+                    <input type="tel" id="phone" placeholder="Puhelinnumero" required="">
+                </div>
+                <div class="popup__form-group">
+                    <input type="text" id="question" placeholder="Вопрос*" required="">
+                </div>
+                <div class="popup__checkbox-group">
+                    <input type="checkbox" id="subscribe3" required="">
+                    <label for="subscribe3" class="popup__checkbox-label">
+                        <span class="popup__custom-box" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="16" height="16" rx="1.06667" fill="#FEE348"></rect>
+                                <path d="M3.75 7.50002L6.87522 11.25L13.125 3.75" stroke="#191919" stroke-width="0.78573" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </span>
+                        <span>Hyväksyn henkilötietojeni käsittelyn <a href="policy.html"><u style="color: #000;">tietosuojakäytännön mukaisesti</u></a>.</span>
+                    </label>
+                </div>
+                <div class="popup__checkbox-group">
+                    <input type="checkbox" id="subscribe4" checked> 
+                    <label for="subscribe4" class="popup__checkbox-label">
+                        <span class="popup__custom-box" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="16" height="16" rx="1.06667" fill="#FEE348"></rect>
+                                <path d="M3.75 7.50002L6.87522 11.25L13.125 3.75" stroke="#191919" stroke-width="0.78573" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </span>
+                        <span>Minulle saa lähettää ajankohtaista tietoa ja uutisia</span>
+                    </label>
+                </div>
+                <button type="submit" class="popup__button">Lähetä</button>
+            </form>
+        </div>
+    </div>
+    <div data-popup="service" class="popup__question">
+        <div class="popup__overlay" data-popup-close></div>
+        <div class="question__form">
+            <button class="popup__close" data-popup-close>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 19L10 10M10 10L1 1M10 10L19.0001 1M10 10L1 19.0001" stroke="#191919" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <h3 class="title">Оставить заявку</h3>
+            <p class="text question__subtitle">Заполините форму и мы ответим на него</p>
+            <form class="popup__form">
+                <div class="popup__form-group">
+                    <input type="text" id="fullName" placeholder="Nimi" required="">
+                </div>
+                <div class="popup__form-group">
+                    <input type="email" id="email" placeholder="Sähköpostiosoite" required="">
+                </div>
+                <div class="popup__form-group">
+                    <input type="tel" id="phone" placeholder="Puhelinnumero" required="">
+                </div>
+                <div class="popup__form-group">
+                    <input type="text" id="question" placeholder="Вопрос*" required="">
+                </div>
+                <div class="popup__checkbox-group">
+                    <input type="checkbox" id="subscribe3" required="">
+                    <label for="subscribe3" class="popup__checkbox-label">
+                        <span class="popup__custom-box" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="16" height="16" rx="1.06667" fill="#FEE348"></rect>
+                                <path d="M3.75 7.50002L6.87522 11.25L13.125 3.75" stroke="#191919" stroke-width="0.78573" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </span>
+                        <span>Hyväksyn henkilötietojeni käsittelyn <a href="policy.html"><u style="color: #000;">tietosuojakäytännön mukaisesti</u></a>.</span>
+                    </label>
+                </div>
+                <div class="popup__checkbox-group">
+                    <input type="checkbox" id="subscribe4" checked> 
+                    <label for="subscribe4" class="popup__checkbox-label">
+                        <span class="popup__custom-box" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="16" height="16" rx="1.06667" fill="#FEE348"></rect>
+                                <path d="M3.75 7.50002L6.87522 11.25L13.125 3.75" stroke="#191919" stroke-width="0.78573" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </span>
+                        <span>Minulle saa lähettää ajankohtaista tietoa ja uutisia</span>
+                    </label>
+                </div>
+                <button type="submit" class="popup__button">Lähetä</button>
+            </form>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="footer__row row">
