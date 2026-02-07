@@ -1983,11 +1983,13 @@ body.hidden {
   color: #000;
   max-height: 0;
   transition: 0.7s;
+  opacity: 0;
 }
 .question__list-item p.active {
   max-height: 500px;
   padding: 40px 30px;
   margin-top: 10px;
+  opacity: 1;
 }
 
 @keyframes trust-scroll {

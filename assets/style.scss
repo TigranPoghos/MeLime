@@ -2468,11 +2468,13 @@ body {
                 color: #000;
                 max-height: 0;
                 transition: .7s;
+                opacity: 0;
 
                 &.active {
                     max-height: 500px;
                     padding: 40px 30px;
                     margin-top: 10px;
+                    opacity: 1;
                 }
             }
         }
