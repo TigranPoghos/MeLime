@@ -377,31 +377,39 @@ document.addEventListener('DOMContentLoaded', function() {
         const BODY_HIDDEN_CLASS = 'hidden';
         const POPUP_ACTIVE_CLASS = 'active';
 
+        const isAnyPopupOpen = () =>
+            !!document.querySelector(`[data-popup].${POPUP_ACTIVE_CLASS}`);
+
+        const syncBodyLock = () => {
+            if (isAnyPopupOpen()) {
+            document.body.classList.add(BODY_HIDDEN_CLASS);
+            } else {
+            document.body.classList.remove(BODY_HIDDEN_CLASS);
+            }
+        };
+
         const openPopup = (name) => {
             const popup = document.querySelector(`[data-popup="${name}"]`);
             if (!popup) return;
 
             closeAllPopups();
-
             popup.classList.add(POPUP_ACTIVE_CLASS);
-            document.body.classList.add(BODY_HIDDEN_CLASS);
+
+            syncBodyLock();
         };
 
         const closePopup = (popup) => {
             if (!popup) return;
 
             popup.classList.remove(POPUP_ACTIVE_CLASS);
-
-            if (!document.querySelector(`.popup.${POPUP_ACTIVE_CLASS}`)) {
-            document.body.classList.remove(BODY_HIDDEN_CLASS);
-            }
+            syncBodyLock();
         };
 
         const closeAllPopups = () => {
             document.querySelectorAll(`[data-popup].${POPUP_ACTIVE_CLASS}`)
-            .forEach(popup => popup.classList.remove(POPUP_ACTIVE_CLASS));
+            .forEach(p => p.classList.remove(POPUP_ACTIVE_CLASS));
 
-            document.body.classList.remove(BODY_HIDDEN_CLASS);
+            syncBodyLock();
         };
 
         // Открытие
@@ -410,11 +418,10 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!openBtn) return;
 
             e.preventDefault();
-            const popupName = openBtn.dataset.popupOpen;
-            openPopup(popupName);
+            openPopup(openBtn.dataset.popupOpen);
         });
 
-        // Закрытие
+        // Закрытие (только по [data-popup-close])
         document.addEventListener('click', (e) => {
             const closeBtn = e.target.closest('[data-popup-close]');
             if (!closeBtn) return;
@@ -425,10 +432,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Esc
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-            closeAllPopups();
+            if (e.key === 'Escape') closeAllPopups();
+        });
+
+        // Если какой-то другой код снимает body.hidden — возвращаем обратно, пока открыт попап
+        const mo = new MutationObserver(() => {
+            if (isAnyPopupOpen() && !document.body.classList.contains(BODY_HIDDEN_CLASS)) {
+            document.body.classList.add(BODY_HIDDEN_CLASS);
             }
         });
+        mo.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+        // на всякий случай при старте
+        syncBodyLock();
     })();
 
 
@@ -437,23 +453,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-(() => {
-  const ACTIVE_CLASS = 'active';
+    //аккордеон
+    (() => {
+    const ACTIVE_CLASS = 'active';
 
-  document.addEventListener('click', (e) => {
-    const subtitle = e.target.closest('.history__subtitle');
-    if (!subtitle) return;
+    document.addEventListener('click', (e) => {
+        const subtitle = e.target.closest('.history__subtitle');
+        if (!subtitle) return;
 
-    const text = subtitle.nextElementSibling;
+        const text = subtitle.nextElementSibling;
 
-    // проверяем, что следующий элемент — нужный текст
-    if (!text || !text.classList.contains('history__text')) return;
+        if (!text || !text.classList.contains('history__text')) return;
 
-    // переключаем
-    subtitle.classList.toggle(ACTIVE_CLASS);
-    text.classList.toggle(ACTIVE_CLASS);
-  });
-})();
+        subtitle.classList.toggle(ACTIVE_CLASS);
+        text.classList.toggle(ACTIVE_CLASS);
+    });
+    })();
 
 
     
