@@ -2525,6 +2525,9 @@ body {
 }
 
 .error {
+    position: relative;
+    overflow: hidden;
+
     &__row {
         flex-direction: column;
         align-items: center;
@@ -2572,6 +2575,131 @@ body {
             & span {
                 color: #000;
             }
+        }
+    }
+
+    &__img {
+        &-1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        &-2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        &-3 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            pointer-events: none;
+        }
+    }
+}
+
+@keyframes draw {
+  to { stroke-dashoffset: 0; }
+}
+
+.thanks {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+    padding: 150px 0 100px 0;
+
+    &__row {
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.93), 0 7px 7px 0 rgba(0, 0, 0, 0.81), 0 17px 10px 0 rgba(0, 0, 0, 0.48), 0 30px 12px 0 rgba(0, 0, 0, 0.14), 0 46px 13px 0 rgba(0, 0, 0, 0.02);
+        border-radius: 30px;
+        padding: 40px;
+        background: linear-gradient(215deg, #fee348 0%, #fff097 37.02%, #fff097 62.98%, #fee348 100%);
+        max-width: 986px;
+        margin: 0 auto;
+    }
+
+    & h1 {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 100%;
+        text-align: center;
+        color: #191919;
+        margin: 20px 0 10px 0;
+    }
+
+    & h3 {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 130%;
+        text-align: center;
+        color: #000;
+    }
+
+    & .first__second-button {
+        margin: 20px 0;
+        background: transparent;
+        border: 2px solid #000;
+
+        & span {
+            color: #000;
+        }
+
+        &:hover {
+            background: #000;
+
+            & span {
+                color: #FEE348;
+            }
+        }
+    }
+
+    & .svg__block {
+        background: transparent;
+        border: 1px solid #000;
+        transition: .6s;
+
+        & svg path {
+            transition: .6s;
+        }
+
+        &:hover {
+            border: 1px solid #000;
+            background: #000;
+
+            & svg path {
+                fill: #fee348;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__checkmark {
+        &-path {
+            stroke-dasharray: 260;
+            stroke-dashoffset: 260;
+            animation: draw 2s linear forwards;
         }
     }
 }
@@ -3361,6 +3489,42 @@ input[type="tel"].error {
                 font-size: 200px;
             }
         }
+
+        &__img {
+            &-1 {
+                & img {
+                    max-width: 400px;
+                }
+            }
+
+            &-2 {
+                & img {
+                    max-width: 1000px;
+                }
+            }
+
+            &-3 {
+                & img {
+                    max-width: 350px;
+                }
+            }
+        }
+    }
+
+    .thanks {
+        padding: 120px 0 100px 0;
+        
+        &__row {
+            max-width: 800px;
+        }
+
+        & h1 {
+            font-size: 40px
+        }
+
+        & h3 {
+            font-size: 20px;
+        }
     }
 
     .rule {
@@ -3718,6 +3882,46 @@ input[type="tel"].error {
             & span {
                 font-size: 170px;
             }
+        }
+
+        &__img {
+            &-1 {
+                & img {
+                    max-width: 300px;
+                }
+            }
+
+            &-2 {
+                & img {
+                    max-width: 800px;
+                }
+            }
+
+            &-3 {
+                & img {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+
+    .thanks {
+        & h1 {
+            font-size: 36px;
+        }
+
+        &__checkmark {
+            width: 60px;
+        }
+
+        &__circle {
+            width: 80px;
+            height: 80px;
+        }
+
+        &__row {
+            max-width: 600px;
+            padding: 30px;
         }
     }
 
@@ -4437,6 +4641,51 @@ input[type="tel"].error {
             & span {
                 font-size: 150px;
             }
+        }
+
+        &__img {
+            &-1 {
+                & img {
+                    max-width: 220px;
+                }
+            }
+
+            &-2 {
+                & img {
+                    max-width: 700px;
+                }
+            }
+
+            &-3 {
+                & img {
+                    max-width: 220px;
+                }
+            }
+        }
+    }
+
+    .thanks {
+        &__row {
+            max-width: 100%;
+            margin: 0 20px;
+            padding: 20px;
+        }
+
+        &__circle {
+            width: 60px;
+            height: 60px;
+        }
+
+        &__checkmark {
+            width: 45px;
+        }
+
+        & h1 {
+            font-size: 30px;
+        }
+
+        & h3 {
+            font-size: 16px;
         }
     }
 
