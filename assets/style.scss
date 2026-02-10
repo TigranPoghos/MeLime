@@ -2524,6 +2524,58 @@ body {
     }
 }
 
+.error {
+    &__row {
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 0 100px 0;
+
+        & h1 {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 80px;
+            line-height: 100%;
+            color: #fee348;
+            text-align: center;
+        }
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+        margin: 80px 0;
+
+        & svg {
+            width: 175px;
+        }
+
+        & span {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 300px;
+            line-height: 100%;
+            color: #FEE348;
+        }
+    }
+    
+    & .first__second-button {
+        background: #000;
+        border: 2px solid #fee348;
+
+        & span {
+            color: #FEE348;
+        }
+
+        &:hover {
+            background: #FEE348;
+
+            & span {
+                color: #000;
+            }
+        }
+    }
+}
+
 .history {
     margin-bottom: 120px;
 
@@ -3289,6 +3341,28 @@ input[type="tel"].error {
         }
     }
 
+    .error {
+        &__row {
+            padding: 120px 0 100px 0;
+
+            & h1 {
+                font-size: 60px;
+            }
+        }
+
+        &__main {
+            margin: 40px 0;
+
+            & svg {
+                width: 120px;
+            }
+
+            & span {
+                font-size: 200px;
+            }
+        }
+    }
+
     .rule {
         margin-bottom: 90px;
 
@@ -3625,6 +3699,24 @@ input[type="tel"].error {
                     width: calc(50% - 10px);
                     max-width: none;
                 }
+            }
+        }
+    }
+
+    .error {
+        &__row {
+            & h1 {
+                font-size: 50px;
+            }
+        }
+
+        &__main {
+            & svg {
+                width: 100px;
+            }
+
+            & span {
+                font-size: 170px;
             }
         }
     }
@@ -4326,6 +4418,24 @@ input[type="tel"].error {
                     width: 100%;
                     max-width: 400px;
                 }
+            }
+        }
+    }
+
+    .error {
+        &__row {
+            & h1 {
+                font-size: 45px;
+            }
+        }
+
+        &__main {
+            & svg {
+                width: 90px;
+            }
+
+            & span {
+                font-size: 150px;
             }
         }
     }
