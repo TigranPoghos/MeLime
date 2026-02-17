@@ -1027,6 +1027,36 @@ body.hidden {
   animation: dashMove 2s linear infinite;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper__arrow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: absolute;
+  top: 65px;
+  right: 110px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 295px;
+  border-radius: 20px;
+}
+.swiper-slide img {
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .talk {
   background: linear-gradient(-90deg, #FEE348 0%, #FFF097 100%);
   position: relative;
@@ -1890,6 +1920,19 @@ body.hidden {
 .comment .article__small ::-webkit-scrollbar {
   display: none;
 }
+.comment__swiper {
+  width: calc(50% - 10px);
+  height: 450px;
+}
+.comment__swiper .swiper-slide {
+  display: inline;
+  text-align: start;
+  font-size: inherit;
+  background: none;
+  border-radius: 0;
+  max-width: none;
+  height: auto;
+}
 
 .question {
   margin-bottom: 234px;
@@ -2554,36 +2597,6 @@ body.hidden {
 .contact__form h2 {
   color: #fff;
   max-width: 315px;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-.swiper__arrow {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  position: absolute;
-  top: 65px;
-  right: 110px;
-}
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #444;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 295px;
-  border-radius: 20px;
-}
-.swiper-slide img {
-  border-radius: 20px;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .entry__title {
@@ -4079,6 +4092,13 @@ input[type=tel].error {
   .comment .article__big {
     padding: 20px;
     background: #474747;
+  }
+  .comment__swiper {
+    height: auto;
+    width: 100%;
+  }
+  .comment__swiper .swiper-slide {
+    max-width: 400px;
   }
   .Project__row {
     padding-top: 110px;

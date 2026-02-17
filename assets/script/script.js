@@ -357,7 +357,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //слайдер
     const swiperEl = document.querySelector(".mySwiper");
     if (swiperEl) {
-        var swiper = new Swiper(".mySwiper", {
+        var swiper1 = new Swiper(".mySwiper", {
             slidesPerView: "auto",
             spaceBetween: 20,
             loop: true,
@@ -365,6 +365,31 @@ document.addEventListener('DOMContentLoaded', function() {
             nextEl: ".swiper__left",
             prevEl: ".swiper__right",
             },
+        });
+    }
+
+    const swiperEl2 = document.querySelector(".CommentSwiper");
+
+    if (swiperEl2) {
+        const swiper2 = new Swiper(swiperEl2, {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            direction: "vertical",
+
+            mousewheel: {
+                sensitivity: 0.3,
+                forceToAxis: true,
+                releaseOnEdges: false,
+            },
+
+            breakpoints: {
+            0: {
+                direction: "horizontal",
+            },
+            767: {
+                direction: "vertical",
+            }
+            }
         });
     }
 
