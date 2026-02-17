@@ -1279,6 +1279,12 @@ body.hidden {
   position: relative;
   z-index: 2;
 }
+.Project .first__second-subtitle {
+  text-align: center;
+  max-width: 796px;
+  display: flex;
+  margin: 15px auto 30px auto;
+}
 .Project__row {
   flex-direction: column;
   padding-top: 127px;
@@ -1469,6 +1475,12 @@ body.hidden {
 .Article {
   position: relative;
 }
+.Article .first__second-subtitle {
+  text-align: center;
+  max-width: 796px;
+  display: flex;
+  margin: 15px auto 30px auto;
+}
 .Article__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -1588,6 +1600,12 @@ body.hidden {
   gap: 20px;
   margin-top: 60px;
 }
+.turn__wrapper-second .turn__item-button {
+  border: 2px solid #191919;
+}
+.turn__wrapper-second .turn__item-button:hover {
+  border: 2px solid #191919;
+}
 .turn__item {
   display: flex;
   text-align: left;
@@ -1660,7 +1678,6 @@ body.hidden {
   align-items: center;
   background: #191919;
   border-radius: 60px;
-  border: 2px solid #191919;
   transition: 0.6s;
 }
 .turn__item-button .content {
@@ -1670,7 +1687,6 @@ body.hidden {
   transition: 0.6s;
 }
 .turn__item-button:hover {
-  border: 2px solid #191919;
   background: transparent;
 }
 .turn__item-button:hover svg path {
@@ -2578,8 +2594,9 @@ body.hidden {
 }
 .entry__title .content {
   color: #FEE348;
-  gap: 30px;
+  gap: 15px;
   display: flex;
+  align-items: center;
 }
 .entry__content {
   display: flex;
@@ -2615,6 +2632,9 @@ body.hidden {
 .popup__question .question__form {
   position: relative;
   z-index: 1000;
+}
+.popup__question .question__form .title {
+  font-size: 32px;
 }
 .popup__question.active {
   display: flex;
@@ -3666,6 +3686,16 @@ input[type=tel].error {
   .first__third {
     height: auto;
   }
+  .Article .article__big {
+    max-width: 500px;
+    padding: 0;
+  }
+  .Article__wrapper {
+    gap: 20px;
+  }
+  .Article__wrapper .article__big {
+    width: 100%;
+  }
   .svg__block {
     width: 38px;
     height: 38px;
@@ -3784,6 +3814,7 @@ input[type=tel].error {
   }
   .project__overlay {
     opacity: 1;
+    padding: 10px;
   }
   .project__title svg {
     width: 15px;
@@ -3792,12 +3823,16 @@ input[type=tel].error {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
   .project__grid-item {
     max-width: 500px;
     max-height: none;
     width: 100%;
     height: auto;
+  }
+  .project__grid-item-big {
+    gap: 10px;
   }
   .history__content {
     margin-top: 30px;

@@ -1528,6 +1528,13 @@ body {
     position: relative;
     z-index: 2;
 
+    & .first__second-subtitle {
+        text-align: center;
+        max-width: 796px;
+        display: flex;
+        margin: 15px auto 30px auto;
+    }
+
     &__row {
         flex-direction: column;
         padding-top: 127px;
@@ -1790,6 +1797,13 @@ body {
 .Article {
     position: relative;
 
+    & .first__second-subtitle {
+        text-align: center;
+        max-width: 796px;
+        display: flex;
+        margin: 15px auto 30px auto;
+    }
+
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -1940,6 +1954,20 @@ body {
         flex-direction: column;
         gap: 20px;
         margin-top: 60px;
+
+        &-second {
+            & .turn {
+                &__item {
+                    &-button {
+                        border: 2px solid #191919;
+
+                        &:hover {
+                            border: 2px solid #191919;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &__item {
@@ -2036,7 +2064,6 @@ body {
             align-items: center;
             background: #191919;
             border-radius: 60px;
-            border: 2px solid #191919;
             transition: .6s;
 
             & .content {
@@ -2048,7 +2075,6 @@ body {
             }
 
             &:hover {
-                border: 2px solid #191919;
                 background: transparent;
 
                 & svg path {
@@ -3179,8 +3205,9 @@ body {
 
         & .content {
             color: #FEE348;
-            gap: 30px;
+            gap: 15px;
             display: flex;
+            align-items: center;
         }
     }
 
@@ -3222,6 +3249,10 @@ body {
     & .question__form {
         position: relative;
         z-index: 1000;
+
+        & .title {
+            font-size: 32px;
+        }
     }
 
     &.active {
@@ -4762,6 +4793,25 @@ input[type="tel"].error {
         }
     }
 
+    .Article {
+        & .article {
+            &__big {
+                max-width: 500px;
+                padding: 0;
+            }
+        }
+
+        &__wrapper {
+            gap: 20px;
+
+            & .article {
+                &__big {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
     .svg {
         &__block {
             width: 38px;
@@ -4936,6 +4986,7 @@ input[type="tel"].error {
 
         &__overlay {
             opacity: 1;
+            padding: 10px;
         }
 
         &__title {
@@ -4948,12 +4999,17 @@ input[type="tel"].error {
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 20px;
 
             &-item {
                 max-width: 500px;
                 max-height: none;
                 width: 100%;
                 height: auto;
+
+                &-big {
+                    gap: 10px;
+                }
             }
         }
     }
